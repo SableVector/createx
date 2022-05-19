@@ -1,0 +1,300 @@
+/* === FORM-PAGE === */
+.form-page {
+    padding: $b * 5;
+    margin: -$b * 5;
+    overflow: hidden;
+
+    @media (min-width: $md3+px) {
+        // align-items: center;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    @media (max-width: $md3+px) {
+        flex-direction: column;
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        visibility: hidden;
+        content: "";
+        background: rgba(0, 0, 0, 0.8) url("../img/preloaded.gif") center / ($b * 50) no-repeat;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &._sending {
+        &::after {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    // .form-page__row
+    &__row {
+        display: flex;
+        gap: $b * 12;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+        }
+
+        @media (min-width: $md3+px) {
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $b * 12;
+        }
+    }
+    // .form-page__inner
+    &__inner {
+        width: 100%;
+
+        &:nth-child(even) {
+            @include animation1(fadeInLeft, 1s, calc(var(--i) * 0.2s));
+        }
+
+        &:nth-child(odd) {
+            @include animation1(fadeInRight, 1s, calc(var(--i) * 0.2s));
+        }
+
+        .popup & {
+            &:nth-child(even) {
+                visibility: visible;
+            }
+
+            &:nth-child(odd) {
+                visibility: visible;
+            }
+        }
+
+        &--df {
+            @include adaptiveValue("gap", 24, 15);
+
+            display: flex;
+
+            @media (max-width: $md3+px) {
+                flex-direction: column;
+            }
+        }
+
+        &--mb {
+            &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 24, 15);
+            }
+        }
+    }
+    // .form-page__label
+    &__label {
+        display: inline-block;
+        font-size: $b * 7;
+        line-height: 150%;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 4;
+        }
+    }
+    // .form-page__input
+    &__input {
+        @include border-radius;
+
+        position: relative;
+        flex: 1 1 auto;
+        background: #fff;
+        border: 1px solid $color-input;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: $b * 7;
+            width: 100%;
+            max-width: $b * 8;
+            height: 100%;
+            max-height: $b * 8;
+            content: "";
+            transform: translateY(-50%);
+        }
+
+        &._error {
+            &::after {
+                background: url("../img/icons/danger.svg") center/contain no-repeat;
+            }
+
+            &.pass::after {
+                background: none;
+            }
+        }
+
+        &._success {
+            &::after {
+                background: url("../img/icons/success.svg") center/contain no-repeat;
+            }
+
+            &.pass::after {
+                background: none;
+            }
+        }
+
+        input {
+            @include border-radius;
+
+            width: 100%;
+            height: 100%;
+            padding: $b * 6 $b * 16 $b * 6 $b * 8;
+            font-family: inherit;
+            font-size: $b * 8;
+            border: none;
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                right: $b * 5;
+                max-width: $b * 7;
+                max-height: $b * 7;
+                content: "";
+                transform: translateY(-50%);
+            }
+
+            &._error {
+                @include border-radius;
+
+                border: 1px solid $color-danger;
+            }
+
+            &._success {
+                @include border-radius;
+
+                border: 1px solid $color-success;
+            }
+
+            &::placeholder {
+                font-family: inherit;
+                font-size: inherit;
+                color: $color-wolf-light;
+            }
+
+            &:focus {
+                @include focus-input;
+            }
+        }
+    }
+    // .form-page__textarea
+    &__textarea {
+        @include border-radius;
+
+        position: relative;
+        display: flex;
+        background: #fff;
+        border: 1px solid $color-input;
+
+        textarea {
+            @include border-radius;
+
+            width: 100%;
+            min-height: $b * 64;
+            max-height: $b * 150;
+            padding: $b * 6 $b * 16 $b * 6 $b * 8;
+            font-family: inherit;
+            font-size: $b * 8;
+            resize: vertical;
+            border: none;
+
+            &::placeholder {
+                font-family: inherit;
+                font-size: inherit;
+                color: $color-wolf-light;
+            }
+
+            &:focus {
+                @include focus-input;
+            }
+        }
+    }
+    // .form-page__button
+    &__button {
+        @include animation1(fadeIn, 2s, 1s);
+
+        .popup & {
+            visibility: visible;
+        }
+
+        white-space: nowrap;
+
+        &--flex45 {
+            @media (min-width: $md3+px) {
+                flex: 0 1 procent(340, 705);
+            }
+
+            @media (max-width: $md3+px) {
+                width: 100%;
+            }
+        }
+
+        &--width100 {
+            width: 100%;
+        }
+    }
+    // .form-page__checkbox
+    &__checkbox {
+        @include animation1(fadeIn, 2s, 1s);
+
+        .popup & {
+            visibility: visible;
+        }
+
+        &--flex45 {
+            @media (min-width: $md3+px) {
+                flex: 0 1 procent(340, 705);
+            }
+
+            @media (max-width: $md3+px) {
+                width: 100%;
+            }
+        }
+    }
+    // .form-page__password-button
+    &__password-button {
+        @include reset-btn;
+
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 1;
+        padding: $b * 6;
+        transform: translateY(-50%);
+
+        svg {
+            @include transition(fill);
+
+            max-width: $b * 8;
+            max-height: $b * 8;
+            pointer-events: none;
+            fill: $color-text;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                svg {
+                    fill: $color-primary;
+                }
+            }
+        }
+    }
+    // .form-page__link
+    &__link {
+        font-size: $b * 7;
+        line-height: 150%;
+        color: $color-primary;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

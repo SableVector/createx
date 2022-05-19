@@ -1,0 +1,190 @@
+/* === SLIDERS === */
+.slider {
+    // .slider__swiper
+    &__swiper {
+    }
+    // .slider__slide
+    &__slide {
+    }
+    // .slider__control
+    &__control {
+    }
+    // .slider__btn
+    &__btn {
+        @include reset-btn;
+        @include transition(background-color);
+
+        width: $b * 24;
+        height: $b * 24;
+        background-color: transparent;
+        border-radius: 50%;
+
+        &:disabled {
+            cursor: unset;
+            background-color: rgb(185, 185, 185);
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: rgb(185, 185, 185);
+
+                    svg {
+                        fill: $color-text;
+                    }
+                }
+            }
+        }
+
+        svg {
+            @include transition(fill);
+
+            width: $b * 9;
+            height: $b * 5;
+            fill: $color-text;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $color-primary;
+
+                svg {
+                    fill: #fff;
+                }
+            }
+        }
+        // .slider__btn--prev
+        &--prev {
+        }
+        // .slider__btn--next
+        &--next {
+            transform: rotate(180deg);
+        }
+    }
+    // .slider__pagination
+    &__pagination {
+    }
+    // .slider__pagination-bullet
+    &__pagination-bullet {
+        &:not(:last-child) {
+            margin-right: $b * 6;
+        }
+
+        &.swiper-pagination-bullet-active {
+            background-color: $color-main-dark;
+        }
+    }
+}
+
+.slider-team {
+    padding-bottom: $b * 12;
+
+    // .slider-team__swiper
+    &__swiper {
+    }
+    // .slider-team__slide
+    &__slide {
+        @include animation1(zoomIn, 1s, 0.2s);
+    }
+    // .slider-team__control
+    &__control {
+        @include animation1(fadeInRight, 1s, 0.2s);
+
+        display: flex;
+        justify-content: flex-end;
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 48, 24);
+        }
+    }
+    // .slider-team__slider-button-prev
+    &__slider-button-prev {
+    }
+    // .slider-team__slider-button-next
+    &__slider-button-next {
+    }
+}
+
+.slider-testimonials {
+    position: relative;
+    // .slider-testimonials__control
+    &__control {
+        @media (max-width: $md3+px) {
+            display: flex;
+            justify-content: flex-end;
+
+            &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 48, 24);
+            }
+        }
+    }
+
+    &__slider-button-prev,
+    &__slider-button-next {
+        @media (min-width: $md3+px) {
+            position: absolute;
+            top: 47%;
+            z-index: 2;
+        }
+    }
+    // .slider-testimonials__slider-button-prev
+    &__slider-button-prev {
+        @media (min-width: $md3+px) {
+            left: 0;
+        }
+    }
+    // .slider-testimonials__slider-button-next
+    &__slider-button-next {
+        @media (min-width: $md3+px) {
+            right: 0;
+        }
+    }
+    // .slider-testimonials__swiper
+    &__swiper {
+        &:not(:last-child) {
+            margin-bottom: $b * 30;
+        }
+    }
+    // .slider-testimonials__slide
+    &__slide {
+    }
+    // .slider-testimonials__pagination
+    &__pagination {
+        & .swiper-pagination-bullet {
+            background-color: $color-main-dark;
+        }
+
+        & .swiper-pagination-bullet-active {
+            background-color: $color-primary;
+        }
+    }
+}
+
+.slider-carousel {
+    padding-bottom: $b * 12;
+    // .slider-carousel__control
+    &__control {
+        @include animation1(fadeInRight, 2s, 0);
+
+        display: flex;
+        justify-content: flex-end;
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 48, 24);
+        }
+    }
+    // .slider-carousel__slider-button-prev
+    &__slider-button-prev {
+    }
+    // .slider-carousel__slider-button-next
+    &__slider-button-next {
+    }
+    // .slider-carousel__swiper
+    &__swiper {
+        margin: 0 -$b * 2.5;
+    }
+    // .slider-carousel__slide
+    &__slide {
+        @include animation1(zoomIn, 1s, 0s);
+
+        padding: 0 $b * 5;
+    }
+}

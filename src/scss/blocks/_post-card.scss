@@ -1,0 +1,167 @@
+/* === POST-CARD === */
+.post-card {
+    @include transition(all);
+    @include hover-scale;
+
+    @media (max-width: $md3+px) {
+        display: grid;
+        grid-template-columns: 30% 1fr;
+        gap: $b * 10;
+    }
+
+    @media (max-width: 37.5rem) {
+        display: block;
+    }
+    // .post-card__image
+    &__image {
+        position: relative;
+    }
+    // .post-card__image-ibg
+    &__image-ibg {
+        @include border-radius;
+
+        display: inline-block;
+        width: 100%;
+        padding-bottom: procent(300, 390);
+        overflow: hidden;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 9;
+        }
+    }
+    // .post-card__image-badge
+    &__image-badge {
+        @include border-radius;
+
+        position: absolute;
+        top: $b * 6;
+        left: $b * 6;
+        display: flex;
+        gap: $b * 2;
+        align-items: center;
+        padding: $b $b * 4;
+        font-size: $b * 7;
+        line-height: 150%;
+        pointer-events: none;
+        background-color: #fff;
+
+        svg {
+            max-width: $b * 7;
+            max-height: $b * 7;
+            fill: $color-text;
+        }
+    }
+    // .post-card__content
+    &__content {
+        &--padding {
+            @include adaptiveValue("padding", 24, 12);
+        }
+    }
+    // .post-card__content-header
+    &__content-header {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: $b * 5;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 4;
+        }
+    }
+    // .post-card__content-direction
+    &__content-direction {
+        @include border-radius;
+
+        display: inline-block;
+        padding: $b * 3 $b * 4;
+        font-size: $b * 7;
+        line-height: 150%;
+        color: #fff;
+
+        &:not(:last-child) {
+            margin-bottom: em(20, 14);
+        }
+
+        &--marketing {
+            background-color: $color-marketing;
+        }
+
+        &--recruting {
+            background-color: $color-recruting;
+        }
+
+        &--management {
+            background-color: $color-management;
+        }
+
+        &--design {
+            background-color: $color-design;
+        }
+
+        &--development {
+            background-color: $color-development;
+        }
+    }
+    // .post-card__content-info
+    &__content-info {
+        @include adaptiveValue("font-size", 14, 12);
+
+        display: flex;
+        align-items: center;
+        font-weight: $fw-bold;
+        line-height: 150%;
+        color: $color-wolf;
+
+        &:not(:last-child) {
+            @include adaptiveValue("padding-right", 12, 3);
+
+            border-right: 1px solid $color-wolf;
+        }
+
+        &:not(:first-child) {
+            @include adaptiveValue("padding-left", 12, 3);
+        }
+
+        svg {
+            max-width: $b * 8;
+            max-height: $b * 8;
+            margin-right: $b * 4;
+            fill: $color-wolf;
+        }
+    }
+    // .post-card__content-title
+    &__content-title {
+        @include adaptiveValue("font-size", 20, 18);
+        @include transition(color);
+
+        display: inline-block;
+        font-weight: $fw-bold;
+        line-height: 150%;
+        color: $color-main-dark;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $color-primary;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $b * 4;
+        }
+    }
+    // .post-card__content-text
+    &__content-text {
+        p {
+            &:not(:last-child) {
+                margin-bottom: $b * 5;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $b * 8;
+        }
+    }
+    // .post-card__link
+    &__link {
+    }
+}

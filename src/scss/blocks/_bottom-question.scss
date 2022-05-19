@@ -1,0 +1,25 @@
+/* === BOTTOM-QUESTION */
+.bottom-question {
+    @include adaptiveValue("gap", 40, 20);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $md3+px) {
+    }
+    // .bottom-question__text
+    &__text {
+        @include adaptiveValue("font-size", 28, 20);
+        @include animation1(fadeInLeft, 1s, 0.2s);
+
+        font-weight: $fw-bold;
+        line-height: 150%;
+        color: $color-main-dark;
+    }
+    // .bottom-question__button
+    &__button {
+        @include animation1(fadeInRight, 1s, 0.2s);
+    }
+}

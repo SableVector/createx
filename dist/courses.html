@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CreateX</title>
+	<!-- Подключение стилей сайта -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220511171456">
+	<!-- Подключение скриптов -->
+	<script defer src="js/main.min.js?_v=20220511171456"></script>
+</head>
+
+<body>
+	<div class="wrapper" id="wrapper">
+		<!-- === HEADER === -->
+		<header class="header" id="header" data-animation >
+    <div class="header__container">
+
+        <div class="nav-header__logo logo">
+            <a class="logo__link" href="main-page.html">
+                <img class="logo__img" src="img/logo.svg" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="header__nav nav-header">
+
+            <div class="nav-header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="courses.html">Courses</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="events.html">Events</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-header__control control-header">
+                <a href="#" class="control-header__link button button--large button__colored">
+                    Get consultation
+                </a>
+                <div class="control-header__options options-header">
+                    <svg>
+                        <use xlink:href="img/symbol/icons.svg#account"></use>
+                    </svg>
+                    <button class="options-header__button" type="button" data-modal-open = "sign-in">Log in</button>/<button
+                        class="options-header__button" type="button" data-modal-open = "sign-up">Register</button>
+                </div>
+            </div>
+
+        </nav>
+
+        <button class="menu__icon icon-menu" id="burger" aria-label="menu burger">
+            <span></span>
+        </button>
+    </div>
+</header>
+		<!-- === MAIN === -->
+		<main class="page__courses courses-page">
+
+			<section class="courses-page__catalog catalog-courses">
+				<div class="catalog-courses__container">
+					<div class="catalog-courses__titles block-header" data-animation>
+						<div class="block-header__suptitle suptitle">Enjoy your studying!</div>
+						<h2 class="block-header__title title">Our online courses</h2>
+					</div>
+
+					<div class="catalog-courses__tabs tabs-course" data-tabs data-animation>
+						<div class="tabs-course__actions">
+							<nav class="tabs-course__navigation" data-tabs-titles>
+								<button class="tabs-course__title _tab-active" type="button">All<span
+										class="tabs-course__title-num">1</span></button>
+								<button class="tabs-course__title" type="button">Marketing <span
+										class="tabs-course__title-num">1</span></button>
+								<button class="tabs-course__title" type="button">Management <span
+										class="tabs-course__title-num">1</span></button>
+								<button class="tabs-course__title" type="button">HR & Recruting <span
+										class="tabs-course__title-num">1</span></button>
+								<button class="tabs-course__title" type="button">Design <span
+										class="tabs-course__title-num">1</span></button>
+								<button class="tabs-course__title" type="button">Development <span
+										class="tabs-course__title-num">1</span></button>
+							</nav>
+							<form class="tabs-course__search search-form" action="#">
+								<div class="search-form__input">
+									<input autocomplete="off" type="text" name="form[search]" data-error="Ошибка"
+										placeholder="Search course...">
+								</div>
+								<button class="search-form__button" type="submit">
+									<svg class="svg">
+										<use xlink:href="img/symbol/icons.svg#search"></use>
+									</svg>
+								</button>
+							</form>
+						</div>
+						<div class="tabs-course__content" data-tabs-body>
+							<div class="tabs-course__body list-courses">
+								<ul class="list-courses__list">
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<picture><source srcset="img/course-card/lector_02.webp" type="image/webp"><img src="img/course-card/lector_02.jpg" alt="photo Jerome Bell"></picture>
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--marketing">
+													Marketing</h3>
+												<a class="course-card__body" href="#">The Ultimate Google Ads Training
+													Course</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$100</span>
+													<a class="course-card__lector" href="#">by Jerome Bell</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_04.jpg"
+														alt="photo Marvin McKinney">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--management">
+													Management</h3>
+												<a class="course-card__body" href="#">Prduct Management Fundamentals</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$400</span>
+													<a class="course-card__lector" href="#">by Marvin McKinney</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_05.jpg"
+														alt="photo Leslie Alexander Li">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--recruting">
+													HR &
+													Recruting</h3>
+												<a class="course-card__body" href="#">HR Management and Analytics</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$200</span>
+													<a class="course-card__lector" href="#">by Leslie Alexander Li</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_03.jpg"
+														alt="photo Kristin Watson">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--marketing">
+													Marketing</h3>
+												<a class="course-card__body" href="#">Brand Management & PR
+													Communications</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$530</span>
+													<a class="course-card__lector" href="#">by Kristin Watson</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_01.jpg"
+														alt="photo Dianne Russell">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--management">
+													Management</h3>
+												<a class="course-card__body" href="#">Business Development
+													Management</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$400</span>
+													<a class="course-card__lector" href="#">by Dianne Russell</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<picture><source srcset="img/course-card/lector_06.webp" type="image/webp"><img src="img/course-card/lector_06.jpg" alt="photo Guy Hawkins"></picture>
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3 class="course-card__header direction-title direction-title--design">
+													Design
+												</h3>
+												<a class="course-card__body" href="#">Graphic Design Basic</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$500</span>
+													<a class="course-card__lector" href="#">by Guy Hawkins</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_07.jpg"
+														alt="photo Brooklyn Simmons">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--development">
+													Development</h3>
+												<a class="course-card__body" href="#">Highload Software Architecture</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$600</span>
+													<a class="course-card__lector" href="#">by Brooklyn Simmons</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_08.jpg"
+														alt="photo Kathryn Murphy">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--recruting">
+													HR &
+													Recruting</h3>
+												<a class="course-card__body" href="#">Human Resources – Selection and
+													Recruitment</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$150</span>
+													<a class="course-card__lector" href="#">by Kathryn Murphy</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="course.html">
+												<div class="course-card__image-ibg">
+													<picture><source srcset="img/course-card/lector_09.webp" type="image/webp"><img src="img/course-card/lector_09.jpg" alt="photo Guy Hawkins"></picture>
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3 class="course-card__header direction-title direction-title--design">
+													Design
+												</h3>
+												<a class="course-card__body" href="course.html">User Experience.
+													Human-centered
+													Design</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$240</span>
+													<a class="course-card__lector" href="#">by Cody Fisher</a>
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-course__body list-courses">
+								<ul class="list-courses__list">
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_03.jpg"
+														alt="photo Kristin Watson">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--marketing">
+													Marketing</h3>
+												<a class="course-card__body" href="#">Brand Management & PR
+													Communications</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$530</span>
+													<a class="course-card__lector" href="#">by Kristin Watson</a>
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-course__body list-courses">
+								<ul class="list-courses__list">
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_04.jpg"
+														alt="photo Marvin McKinney">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--management">
+													Management</h3>
+												<a class="course-card__body" href="#">Prduct Management Fundamentals</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$400</span>
+													<a class="course-card__lector" href="#">by Marvin McKinney</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_01.jpg"
+														alt="photo Dianne Russell">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--management">
+													Management</h3>
+												<a class="course-card__body" href="#">Business Development
+													Management</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$400</span>
+													<a class="course-card__lector" href="#">by Dianne Russell</a>
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-course__body list-courses">
+								<ul class="list-courses__list">
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_05.jpg"
+														alt="photo Leslie Alexander Li">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--recruting">
+													HR &
+													Recruting</h3>
+												<a class="course-card__body" href="#">HR Management and Analytics</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$200</span>
+													<a class="course-card__lector" href="#">by Leslie Alexander Li</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_08.jpg"
+														alt="photo Kathryn Murphy">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--recruting">
+													HR &
+													Recruting</h3>
+												<a class="course-card__body" href="#">Human Resources – Selection and
+													Recruitment</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$150</span>
+													<a class="course-card__lector" href="#">by Kathryn Murphy</a>
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-course__body list-courses">
+								<ul class="list-courses__list">
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<picture><source srcset="img/course-card/lector_06.webp" type="image/webp"><img src="img/course-card/lector_06.jpg" alt="photo Guy Hawkins"></picture>
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3 class="course-card__header direction-title direction-title--design">
+													Design
+												</h3>
+												<a class="course-card__body" href="#">Graphic Design Basic</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$500</span>
+													<a class="course-card__lector" href="#">by Guy Hawkins</a>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<picture><source srcset="img/course-card/lector_09.webp" type="image/webp"><img src="img/course-card/lector_09.jpg" alt="photo Guy Hawkins"></picture>
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3 class="course-card__header direction-title direction-title--design">
+													Design
+												</h3>
+												<a class="course-card__body" href="#">User Experience. Human-centered
+													Design</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$240</span>
+													<a class="course-card__lector" href="#">by Cody Fisher</a>
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="tabs-course__body list-courses">
+								<ul class="list-courses__list">
+									<li class="list-courses__item">
+										<article class="course-card">
+											<a class="course-card__link" href="#">
+												<div class="course-card__image-ibg">
+													<img src="img/course-card/lector_07.jpg"
+														alt="photo Brooklyn Simmons">
+												</div>
+											</a>
+
+											<div class="course-card__content">
+												<h3
+													class="course-card__header direction-title direction-title--development">
+													Development</h3>
+												<a class="course-card__body" href="#">Highload Software Architecture</a>
+												<div class="course-card__footer">
+													<span class="course-card__price">$600</span>
+													<a class="course-card__lector" href="#">by Brooklyn Simmons</a>
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<button class="catalog-courses__more-button" type="button">
+						<svg>
+							<use xlink:href="img/symbol/icons.svg#loading"></use>
+						</svg>
+						Load more
+					</button>
+
+				</div>
+			</section>
+
+
+			<section class="courses-page__testimonials main-testimonials">
+    <div class="main-testimonials__container">
+        <div class="main-testimonials__titles block-header" data-animation>
+            <div class="block-header__suptitle suptitle">TESTIMONIALS</div>
+            <h2 class="block-header__title title">What our students say</h2>
+        </div>
+
+        <div class="main-testimonials__slider slider-testimonials slider" data-animation>
+            <div class="slider-testimonials__control slider__control">
+                <button class="slider-testimonials__slider-button-prev slider__btn slider__btn--prev" type="button">
+                    <svg>
+                        <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                    </svg>
+                </button>
+                <button class="slider-testimonials__slider-button-next slider__btn slider__btn--next" type="button">
+                    <svg>
+                        <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="slider-testimonials__swiper slider__swiper">
+                <div class="slider-testimonials__slide slider__slide">
+
+                    <div class="testimonial">
+                        <div class="testimonial__body">
+                            <div class="testimonial__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae
+                                    id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate
+                                    etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <picture><source srcset="img/users/user_01.webp" type="image/webp"><img src="img/users/user_01.jpg" alt="Photo"></picture>
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Eleanor Pena</div>
+                                    <div class="testimonial__author-position">Position, Course</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider-testimonials__slide slider__slide">
+
+                    <div class="testimonial">
+                        <div class="testimonial__body">
+                            <div class="testimonial__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae
+                                    id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate
+                                    etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <picture><source srcset="img/users/user_01.webp" type="image/webp"><img src="img/users/user_01.jpg" alt="Photo"></picture>
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Eleanor Pena</div>
+                                    <div class="testimonial__author-position">Position, Course</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider-testimonials__slide slider__slide">
+
+                    <div class="testimonial">
+                        <div class="testimonial__body">
+                            <div class="testimonial__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae
+                                    id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate
+                                    etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <picture><source srcset="img/users/user_01.webp" type="image/webp"><img src="img/users/user_01.jpg" alt="Photo"></picture>
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Eleanor Pena</div>
+                                    <div class="testimonial__author-position">Position, Course</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider-testimonials__slide slider__slide">
+
+                    <div class="testimonial">
+                        <div class="testimonial__body">
+                            <div class="testimonial__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae
+                                    id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate
+                                    etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <picture><source srcset="img/users/user_01.webp" type="image/webp"><img src="img/users/user_01.jpg" alt="Photo"></picture>
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Eleanor Pena</div>
+                                    <div class="testimonial__author-position">Position, Course</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="slider-testimonials__slide slider__slide">
+
+                    <div class="testimonial">
+                        <div class="testimonial__body">
+                            <div class="testimonial__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Justo, amet lectus quam
+                                    viverra mus lobortis fermentum amet, eu. Pulvinar eu sed purus facilisi. Vitae
+                                    id turpis tempus ornare turpis quis non. Congue tortor in euismod vulputate
+                                    etiam eros. Pulvinar neque pharetra arcu diam maecenas diam integer in.
+                                </p>
+                            </div>
+                            <div class="testimonial__author">
+                                <div class="testimonial__author-img">
+                                    <picture><source srcset="img/users/user_01.webp" type="image/webp"><img src="img/users/user_01.jpg" alt="Photo"></picture>
+                                </div>
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Eleanor Pena</div>
+                                    <div class="testimonial__author-position">Position, Course</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slider-testimonials__pagination slider__pagination swiper-pagination"></div>
+        </div>
+
+    </div>
+</section>
+
+			<section class="courses-page__certificate certificate">
+				<div class="certificate__container">
+					<div class="certificate__content">
+						<div class="certificate__titles block-header" data-animation>
+							<div class="block-header__suptitle suptitle">Createx Certificate</div>
+							<h2 class="block-header__title title">Your expertise will be confirmed</h2>
+						</div>
+
+						<div class="certificate__text">
+							<p>
+								We are accredited by international professional organizations and institutes:
+							</p>
+						</div>
+
+						<ul class="certificate__organizations organizations" data-animation>
+							<li class="organizations__img">
+								<picture><source srcset="img/organizations/Del_mar_strategy_logo.webp" type="image/webp"><img src="img/organizations/Del_mar_strategy_logo.jpg" alt="Del Mar Strategy logo"></picture>
+							</li>
+							<li class="organizations__img">
+								<img src="img/organizations/sentinal_consulting_logo.png"
+									alt="Sentinal Consulting logo">
+							</li>
+							<li class="organizations__img">
+								<picture><source srcset="img/organizations/national.webp" type="image/webp"><img src="img/organizations/national.png" alt="National logo"></picture>
+							</li>
+						</ul>
+					</div>
+					<div class="certificate__image-wrapper" data-animation>
+						<div class="certificate__image-ibg">
+							<picture><source srcset="img/certificate/image_01.webp" type="image/webp"><img src="img/certificate/image_01.jpg" alt="Certificate"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="courses-page__subscribe-form subscribe-form" data-animation>
+    <div class="subscribe-form__container">
+        <div class="subscribe-form__titles block-header">
+            <div class="block-header__suptitle suptitle">Don’t miss anything</div>
+            <h2 class="block-header__title title">Subscribe to the Createx School announcements</h2>
+        </div>
+
+        <form class="subscribe-form__form form-page" action="#" data-form>
+            <div class="form-page__input">
+                <input autocomplete="off" type="email" name="form[email]" data-error="Ошибка"
+                    placeholder="Your working email" data-req>
+            </div>
+            <button class="form-page__button button button--large button__colored" type="submit">Subscribe</button>
+        </form>
+
+    </div>
+
+</section>
+
+		</main>
+		<!-- === FOOTER === -->
+		<footer class="footer">
+    <div class="footer__top top-footer">
+        <div class="top-footer__container">
+
+            <div class="top-footer__socials socials-top-footer" data-animation>
+                <div class="socials-top-footer__logo logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__img" src="img/logo-footer.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="socials-top-footer__text">
+                    <p>
+                        Createx Online School is a leader in online studying. We have lots of courses and programs from
+                        the main market experts. We provide relevant approaches to online learning, internships and
+                        employment in the largest companies in the country.
+                    </p>
+                </div>
+                <div class="socials-top-footer__icons footer-icons-socials">
+                    <ul class="footer-icons-socials__list">
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="top-footer__spollers spollers-top-footer" data-spollers="767.98,max" data-animation="">
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>SITE
+                        MAP</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">About Us</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Courses</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Events</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Blog</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>COURSES</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Marketing</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Management</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">HR & Recruting</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Design</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Development</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>CONTACT
+                        US</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="tel:+784055550128">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#iPhone"></use>
+                                        </svg>
+                                        (405) 555-0128
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="mailto:hello@createx.com">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#mail"></use>
+                                        </svg>
+                                        hello@createx.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>SIGN UP TO
+                        OUR
+                        NEWSLETTER</button>
+                    <div class="spollers-top-footer__body">
+                        <form class="top-footer__form form-footer" action="#" data-form>
+                            <div class="form-footer__body">
+                                <div class="form-footer__input">
+                                    <input autocomplete="off" type="email" name="form[email]" data-error="Ошибка"
+                                        placeholder="Email address" data-req>
+                                </div>
+                                <button class="form-footer__button">
+                                    <svg>
+                                        <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="form-footer__text">
+                            <p>
+                                *Subscribe to our newsletter to receive communications and early updates
+                                from Createx SEO Agency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__bottom bootom-footer" data-animation>
+        <div class="bootom-footer__container">
+            <div class="bootom-footer__copy">
+                © All rights reserved. Made with <span>&#9825;</span> by Createx Studio
+            </div>
+            <a class="bootom-footer__button" href="#wrapper" data-smooth>GO TO TOP</a>
+        </div>
+    </div>
+</footer>
+	</div>
+
+	<!-- === POPUP === -->
+	<div class="popup" data-modal="sign-in" id="popup-sigin-in">
+    <div class="popup__container">
+        <div class="popup__body popup-body">
+            <button class="popup-body__close" type="button">
+                <svg>
+                    <use xlink:href="img/symbol/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="popup-body__header">
+                <h3 class="popup-body__header-title">Sign in</h3>
+                <p class="popup-body__header-subtitle">Sign in to your account using email and password provided during
+                    registration.</p>
+            </div>
+            <div class="popup-body__main">
+                <form class="popup-body__form form-page" action="#" data-form>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-in-popup-form-email">Email*</label>
+                        <div class="form-page__input">
+                            <input type="email" name="form[email]" data-error="Ошибка" placeholder="Your working email"
+                                id="sign-in-popup-form-email" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-in-popup-form-password">Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="sign-in-popup-form-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-page__row">
+                        <div class="form-page__checkbox form-page__checkbox--flex45 checkbox">
+                            <input class="checkbox__input" id="popup-c_1" type="checkbox"
+                                name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+                            <label class="checkbox__label" for="popup-c_1"><span class="checkbox__text">Keep me signed
+                                    in</span></label>
+                        </div>
+                        <a class="form-page__link" href="#">Forgot password?</a>
+                    </div>
+
+                    <button class="button button--large button__colored _fw" type="submit">
+                        Sign in
+                    </button>
+                    <div class="popup__body__text">
+                        Don't have an account?
+                        <a class="form-page__link" href="#">
+                            Sign up
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-body__footer">
+                <div class="popup-body__footer-title">Or sign in with</div>
+                <ul class="popup-body__footer-socials socials-items">
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup" data-modal="sign-up" id="popup-sigin-up">
+    <div class="popup__container">
+        <div class="popup__body popup-body">
+            <button class="popup-body__close" type="button">
+                <svg>
+                    <use xlink:href="img/symbol/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="popup-body__header">
+                <h3 class="popup-body__header-title">Sign up</h3>
+                <p class="popup-body__header-subtitle">Registration takes less than a minute but gives you full control
+                    over your studying.</p>
+            </div>
+            <div class="popup-body__main">
+                <form class="popup-body__form form-page" action="#" data-form>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-name">Full Name*</label>
+                        <div class="form-page__input">
+                            <input type="text" name="form[name]" data-error="Ошибка" placeholder="Your full name"
+                                id="sign-up-popup-form-name" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-email">Email*</label>
+                        <div class="form-page__input">
+                            <input type="email" name="form[email]" data-error="Ошибка" placeholder="Your working email"
+                                id="sign-up-popup-form-email" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-password">Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="sign-up-popup-form-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="popup-form-confirm-password">Confirm Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="popup-form-confirm-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-page__row">
+                        <div class="form-page__checkbox form-page__checkbox--flex45 checkbox">
+                            <input class="checkbox__input" id="popup-c_2" type="checkbox"
+                                name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+                            <label class="checkbox__label" for="popup-c_2"><span class="checkbox__text">Remember
+                                    me</span></label>
+                        </div>
+                    </div>
+
+                    <button class="form-page__button button button--large button__colored _fw" type="submit">
+                        Sign up
+                    </button>
+                    <div class="popup__body__text">
+                        Already have an account?
+                        <a class="form-page__link" href="#">
+                            Sign in
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-body__footer">
+                <div class="popup-body__footer-title"></div>
+                <ul class="popup-body__footer-socials socials-items">
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

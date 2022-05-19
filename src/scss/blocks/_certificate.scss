@@ -1,0 +1,60 @@
+/* === CERTIFICATE === */
+.certificate {
+    // .certificate__container
+    &__container {
+        display: grid;
+        gap: $b * 20;
+        align-items: center;
+
+        @media (min-width: $md2+px) {
+            grid-template-columns: 1fr procent(705, 1230);
+        }
+    }
+    // .certificate__content
+    &__content {
+        @media (max-width: $md2+px) {
+            text-align: center;
+        }
+    }
+    // .certificate__titles
+    &__titles {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 48, 20);
+        }
+    }
+    // .certificate__text
+    &__text {
+        @include animation2(fadeIn, 3s);
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 32, 15);
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: $b * 5;
+            }
+        }
+    }
+    // .certificate__organizations
+    &__organizations {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 32, 15);
+        }
+    }
+    // .certificate__image-ibg
+    &__image-ibg {
+        @include border-radius;
+        @include animation1(bounceInRight, 1.6s, 0.2s);
+
+        padding-bottom: procent(500, 705);
+        border: 1px solid $color-border;
+        box-shadow: $b * 6 $b * 5 $b * 7 0 rgba(0, 0, 0, 0.1);
+
+        .main-page__certificate & {
+            @include adaptiveValue("margin-bottom", -164, 0);
+
+            z-index: 1;
+        }
+    }
+}

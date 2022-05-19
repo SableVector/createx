@@ -1,0 +1,134 @@
+/* === POPUP === */
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    display: none;
+    padding: $b * 25 0;
+    overflow: auto;
+    background-color: rgba(#1e212c, 0.75);
+
+    &--active {
+    }
+
+    &--not-active {
+    }
+    // .popup__container
+    &__container {
+    }
+    // .popup__body
+    &__body {
+        .popup--active & {
+            animation-name: rollIn;
+            animation-duration: 0.6s;
+        }
+
+        .popup--not-active & {
+            animation-name: rollOut;
+            animation-duration: 0.6s;
+        }
+    }
+}
+
+.popup-body {
+    @include border-radius;
+    @include adaptiveValue("padding-top", 48, 24);
+    @include adaptiveValue("padding-right", 48, 24);
+    @include adaptiveValue("padding-bottom", 24, 12);
+    @include adaptiveValue("padding-left", 48, 24);
+
+    position: relative;
+    max-width: $b * 243;
+    margin: 0 auto;
+    font-size: $b * 7;
+    line-height: 150%;
+    background: #fff;
+    border: 1px solid $color-border;
+    // .popup-body__close
+    &__close {
+        @include reset-btn;
+
+        position: absolute;
+        top: $b * 10;
+        right: $b * 10;
+        padding: $b * 2.5;
+
+        svg {
+            @include transition(fill);
+
+            width: $b * 8;
+            height: $b * 8;
+            fill: $color-wolf;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                svg {
+                    fill: $color-primary;
+                }
+            }
+        }
+    }
+    // .popup-body__header
+    &__header {
+        text-align: center;
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 24, 18);
+        }
+        // .popup-body__header-title
+        &-title {
+            @include adaptiveValue("font-size", 28, 18);
+
+            font-weight: $fw-bold;
+            color: $color-main-dark;
+
+            &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 24, 18);
+            }
+        }
+        // .popup-body__header-subtitle
+        &-subtitle {
+            color: $color-wolf;
+        }
+    }
+    // .popup-body__main
+    &__main {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 48, 24);
+        }
+    }
+    // .popup-body__form
+    &__form {
+        & > * {
+            &:not(:last-child) {
+                margin-bottom: $b * 10;
+            }
+        }
+    }
+    // .popup-body__footer
+    &__footer {
+        text-align: center;
+        // .popup-body__footer-title
+        &-title {
+            color: $color-wolf;
+
+            &:not(:last-child) {
+                margin-bottom: $b * 8;
+            }
+        }
+        // .popup-body__footer-socials
+        &-socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:not(:last-child) {
+                margin-bottom: $b * 8;
+            }
+        }
+    }
+}

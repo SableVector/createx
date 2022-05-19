@@ -1,0 +1,59 @@
+/* === CHECKBOX === */
+.checkbox {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: em(1);
+    }
+    // .checkbox__label
+    &__label {
+        position: relative;
+        display: flex;
+        gap: $b * 6;
+        align-items: center;
+        cursor: pointer;
+
+        &::before {
+            @include transition(background-color);
+
+            flex: 0 0 $b * 8;
+            align-self: flex-start;
+            height: $b * 8;
+            content: "";
+            border: 1px solid $color-primary;
+            border-radius: $b * 1.5;
+        }
+
+        &::after {
+            @include transition(opacity);
+
+            position: absolute;
+            top: $b * 4;
+            left: $b * 2;
+            font-size: $b * 5;
+            line-height: 0;
+            color: #fff;
+            content: "\2713";
+            opacity: 0;
+        }
+    }
+    // .checkbox__input
+    &__input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+
+        &:focus + .checkbox__label::before {
+            box-shadow: 0 0 $b * 2.5 $color-primary;
+        }
+
+        &:checked + .checkbox__label::before {
+            background-color: $color-primary;
+        }
+
+        &:checked + .checkbox__label::after {
+            opacity: 1;
+        }
+    }
+}

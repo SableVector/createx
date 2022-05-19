@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<!-- Подключение стилей сайта -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220511171456">
+	<!-- Подключение скриптов -->
+	<script defer src="js/main.min.js?_v=20220511171456"></script>
+</head>
+
+<style>
+	body {
+		background-color: beige;
+	}
+
+	.wrapper__container {
+	}
+
+	.wrapper__container h2 {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	.box {
+		display: flex;
+		flex-direction: column;
+		padding: 50px 0 0;
+	}
+
+	.box:not(:last-child) {
+		margin-bottom: 30px;
+	}
+
+	.wrapper__container a {
+		transition: color .3s ease-in-out;
+		padding: 5px;
+		font-size: 24px;
+		margin-left: 30px;
+	}
+
+	.wrapper__container a:hover {
+		color: cadetblue;
+	}
+</style>
+
+<body>
+	<div class="wrapper__container">
+		<div class="box">
+			<h2>Остовные страницы</h2>
+			<a href="main-page.html" target="_blank">Main-Page</a>
+			<a href="courses.html" target="_blank">Courses</a>
+			<a href="course.html" target="_blank">Course</a>
+			<a href="events.html" target="_blank">Events</a>
+			<a href="event.html" target="_blank">Event</a>
+			<a href="about-us.html" target="_blank">About-Us</a>
+			<a href="blog.html" target="_blank">Blog</a>
+			<a href="single-post.html" target="_blank">Single-post</a>
+			<a href="contacts.html" target="_blank">Contacts</a>
+		</div>
+		<hr>
+		<div class="box">
+		</div>
+
+	</div>
+</body>
+
+</html>

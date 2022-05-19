@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/blocks/_head.html', {
+"title": "CreateX"
+})
+
+<body>
+	<div class="wrapper" id="wrapper">
+        <!-- === HEADER === -->
+        @@include('html/blocks/_header.html',{
+        "activeClass_01": "menu__link",
+        "activeClass_02": "menu__link",
+        "activeClass_03": "menu__link",
+        "activeClass_04": "menu__link",
+        "activeClass_05": "menu__link menu__link--active",
+        })
+        <!-- === MAIN === -->
+        <main class="page__contacts contacts-page">
+
+            <section class="contacts-page__contact-info contact-info">
+                <div class="contact-info__container">
+                    <div class="contact-info__content">
+                        <div class="contact-info__titles block-header" data-animation>
+                            <div class="block-header__suptitle suptitle">Contact info</div>
+                            <h2 class="block-header__title title">Get in touch</h2>
+                        </div>
+                        <div class="contact-info__body">
+                            <ul class="contact-info__body-list" data-animation>
+                                <li class="contact-info__body-item item-contact">
+                                    <div class="item-contact__icon">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#chat"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="item-contact__body">
+                                        <div class="item-contact__title">Talk to us:</div>
+                                        <a class="item-contact__link"
+                                            href="mailto:hello@createx.com">hello@createx.com</a>
+                                    </div>
+                                </li>
+                                <li class="contact-info__body-item item-contact">
+                                    <div class="item-contact__icon">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#iPhone"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="item-contact__body">
+                                        <div class="item-contact__title">Call us:</div>
+                                        <a class="item-contact__link" href="tel:+484055550128">(405) 555-0128</a>
+                                    </div>
+                                </li>
+                                <li class="contact-info__body-item item-contact">
+                                    <div class="item-contact__icon">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#outline"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="item-contact__body">
+                                        <div class="item-contact__title">Address:</div>
+                                        <address class="item-contact__text">
+                                            45463 New Jersey Avenue, Brooklyn, New York, USA
+                                        </address>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-info__footer">
+                            <div class="contact-info__footer-title">Follow us:</div>
+                            <ul class="contact-info__footer-socials socials-items" data-animation>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-info__map" data-animation>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.3975209461737!2d-73.8953202852288!3d40.66520934841475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c54e51dc979%3A0x66450d7c7169a1d7!2zTmV3IEplcnNleSBBdmUsIEJyb29rbHluLCBOWSAxMTIwNywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1645636830505!5m2!1sru!2sua"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts-page__questions contacts-questions">
+                <div class="contacts-questions__container">
+                    <div class="contacts-questions__image" data-animation>
+                        <img src="@img/contacts/illustration.svg" alt="illustration">
+                    </div>
+                    <div class="contacts-questions__form form-contacts">
+                        <div class="form-contacts__titles block-header" data-animation>
+                            <div class="block-header__suptitle suptitle">Any questions?</div>
+                            <h2 class="block-header__title title">Drop us a line</h2>
+                        </div>
+
+                        <form class="form-contacts__form form-page" action="#" data-form data-animation>
+
+                            <div class="form-page__row">
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-first-name">First
+                                        Name*</label>
+                                    <div class="form-contacts__input form-page__input">
+                                        <input autocomplete="off" type="text" name="form[first-name]" data-error="Ошибка"
+                                            placeholder="Your first name" id="contacts-form-first-name" data-req>
+                                    </div>
+                                </div>
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-last-name">Last
+                                        Name*</label>
+                                    <div class="form-contacts__input form-page__input">
+                                        <input autocomplete="off" type="text" name="form[last-name]" data-error="Ошибка"
+                                            placeholder="Your last name" id="contacts-form-last-name" data-req>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-page__row">
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-email">Email*</label>
+                                    <div class="form-contacts__input form-page__input">
+                                        <input autocomplete="off" type="email" name="form[email]" data-error="Ошибка"
+                                            placeholder="Your working email" id="contacts-form-email" data-req>
+                                    </div>
+                                </div>
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-phone">Phone</label>
+                                    <div class="form-contacts__input form-page__input">
+                                        <input autocomplete="off" type="number" name="form[phone]" data-error="Ошибка"
+                                            placeholder="Your phone number" id="contacts-form-phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-page__row">
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-message">Message*</label>
+                                    <div class="form-page__textarea">
+                                        <textarea name="message" id="contacts-form-message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-page__row">
+                                <div class="form-page__checkbox form-page__checkbox--flex45 checkbox">
+                                    <input class="checkbox__input" id="c_1" type="checkbox"
+                                        name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+                                    <label class="checkbox__label" for="c_1"><span class="checkbox__text">I agree to
+                                            receive
+                                            communications from Createx Online School</span></label>
+                                </div>
+
+                                <button class="form-page__button form-page__button--flex45 button button--large button__colored"
+                                    type="submit">
+                                    Send message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- === FOOTER === -->
+        @@include('html/blocks/_footer.html',{})
+    </div>
+
+    <!-- === POPUP === -->
+    @@include('html/blocks/_popup.html',{})
+</body>
+
+</html>

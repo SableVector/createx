@@ -1,0 +1,28 @@
+/* === TEAM === */
+.team {
+    position: relative;
+    background-color: $color-rabbit;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        content: "";
+        background: url("../img/page-main/team/bg.png") center top/cover no-repeat;
+    }
+    // .team__container
+    &__container {
+    }
+    // .team__content
+    &__content {
+    }
+    // .team__titles
+    &__titles {
+    }
+    // .team__slider
+    &__slider {
+    }
+}

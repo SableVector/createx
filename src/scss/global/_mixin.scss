@@ -1,0 +1,151 @@
+// === MIXINS ===
+
+// Подключение шрифтов
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-style: #{$style};
+        font-weight: #{$weight};
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-display: swap;
+    }
+}
+
+// Адаптивное свойство
+@mixin adaptiveValue($property, $startSize, $minSize, $type: $typeContainer) {
+    $addSize: $startSize - $minSize;
+
+    @if $type == 1 {
+        // только если меньше контейнера
+        #{$property}: $startSize + px;
+
+        @media (max-width: #{$md1 + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$md1 - 320}));
+        }
+    }
+
+    @else if $type == 2 {
+        // только если больше контейнера
+        #{$property}: $startSize + px;
+
+        @media (min-width: #{$md1 + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+        }
+    }
+
+    @else {
+        // Всегда
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+}
+
+// Безопастное переполнение текстового блока
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// Подсветка интерактивного блока
+@mixin focus {
+    border-radius: $b;
+    outline: $b solid $color-primary;
+    outline-offset: $b;
+}
+
+// Подсветка инпутов
+@mixin focus-input {
+    border-radius: $b * 2;
+    outline: 1px solid $color-primary;
+    box-shadow: $b * 6 $b * 5 $b * 7 0 rgba($color-primary, 0.1);
+}
+
+// Подсветка родительского блока содержащего интерактивные блоки
+@mixin focus-within {
+    &:focus-within {
+        @include focus;
+    }
+}
+
+// Сброс стандартных стилей кнопок
+@mixin reset-btn {
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    vertical-align: top;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    border: 0;
+}
+
+// Плавность анимации
+@mixin transition($property) {
+    transition: $property 0.3s ease-in-out;
+}
+
+// Скрыть объект со страницы
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+}
+
+@mixin hover-scale {
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: $b * 6 $b * 5 $b * 7 0 rgba(0, 0, 0, 0.1);
+            transform: scale(1.02);
+        }
+    }
+}
+
+@mixin border-radius {
+    border-radius: $b * 2;
+}
+
+@mixin title-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+@mixin title-margin-bottom {
+    &:not(:last-child) {
+        @include adaptiveValue("margin-bottom", 60, 20);
+    }
+}
+
+// Анимация
+@mixin animation1($name, $duration: 2s, $delay: 0s) {
+    visibility: hidden;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-fill-mode: none;
+
+    ._show & {
+        visibility: visible;
+        animation-name: $name;
+        animation-duration: $duration;
+        animation-delay: $delay;
+        animation-fill-mode: both;
+    }
+}
+
+@mixin animation2($name, $duration: 2s, $delay: 0s) {
+    visibility: hidden;
+    animation-name: none;
+    animation-duration: 0s;
+    animation-fill-mode: both;
+
+    &._show {
+        visibility: visible;
+        animation-name: $name;
+        animation-duration: $duration;
+        animation-delay: $delay;
+    }
+}

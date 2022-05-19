@@ -1,0 +1,51 @@
+<header class="header" id="header" data-animation >
+    <div class="header__container">
+
+        <div class="nav-header__logo logo">
+            <a class="logo__link" href="main-page.html">
+                <img class="logo__img" src="@img/logo.svg" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="header__nav nav-header">
+
+            <div class="nav-header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="@@activeClass_01" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="@@activeClass_02" href="courses.html">Courses</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="@@activeClass_03" href="events.html">Events</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="@@activeClass_04" href="blog.html">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="@@activeClass_05" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-header__control control-header">
+                <a href="#" class="control-header__link button button--large button__colored">
+                    Get consultation
+                </a>
+                <div class="control-header__options options-header">
+                    <svg>
+                        <use xlink:href="img/symbol/icons.svg#account"></use>
+                    </svg>
+                    <button class="options-header__button" type="button" data-modal-open = "sign-in">Log in</button>/<button
+                        class="options-header__button" type="button" data-modal-open = "sign-up">Register</button>
+                </div>
+            </div>
+
+        </nav>
+
+        <button class="menu__icon icon-menu" id="burger" aria-label="menu burger">
+            <span></span>
+        </button>
+    </div>
+</header>

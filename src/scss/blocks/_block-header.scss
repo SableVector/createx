@@ -1,0 +1,20 @@
+/* === BLOCK_HEADER === */
+.block-header {
+    max-width: $b * 405;
+    // .block-header__subtitle
+    &__suptitle {
+        @include animation1(fadeIn, 2s, 0.2s);
+
+        &:not(:last-child) {
+            margin-bottom: $b * 4;
+        }
+    }
+    // .block-header__title
+    &__title {
+        @include animation1(fadeIn, 2s, 0.4s);
+
+        &:not(:last-child) {
+            margin-bottom: $b * 4;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+// === Стили Глобальные ===
+@import "libs/reset";
+// @import "libs/normalize";
+@import "global/functions";
+@import "global/variables";
+@import "global/mixin";
+@import "global/animations";
+@import "global/global";
+
+//=== Стилизация плагина Tippy.js ===
+// @import "libs/tippy";
+
+//=== Стилизация плагина Swiper ===
+@import "libs/swiper";
+
+//=== Стилизация плагина noUiSlider(range) ===
+// @import '../../node_modules/nouislider/dist/nouislider';
+// @import "libs/noUiSlider";
+
+//=== Подключение локальных шрифтов ===
+// @import "blocks/fonts";
+
+//=== Подключение меню бургера ===
+@import "blocks/menuBurger";
+
+//=== Подключение звездного меню ===
+// Снипет (HTML): rating
+// @import "blocks/rating";
+
+//=== Подключение Select ===
+// Снипет (HTML): select
+// @import "blocks/select";
+
+//=== Подключение Checkbox ===
+// Снипет (HTML): checkbox
+@import "blocks/checkbox";
+
+//=== Подключение стилей количества ===
+// Снипет (HTML): quantity
+// @import "blocks/quantity";
+
+//=== Подключение стилей Табов ===
+// Снипет (HTML): tabs
+@import "blocks/tabs";
+
+//=== Подключение стилей Спойлеров ===
+// Снипет (HTML): spoller
+@import "blocks/spollers";
+
+// === Стили Блоков ===
+@import "blocks/buttons";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/sliders";
+@import "blocks/common";
+
+// === Стили Отдельных страниц ===
+@import "blocks/main-page";
+@import "blocks/courses";
+@import "blocks/course";
+@import "blocks/events";
+@import "blocks/event";
+@import "blocks/about-us";
+@import "blocks/blog";
+@import "blocks/single-post";
+@import "blocks/contacts";
+// @import "blocks/policy";
+
+// === Стили Модальных окон ===
+@import "blocks/popup";

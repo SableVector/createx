@@ -1,0 +1,58 @@
+/* === BURGER === */
+.icon-menu {
+    @include animation1(bounceInRight, 2s, 0);
+
+    display: none;
+
+    @media (max-width: $md2 + px) {
+        position: relative;
+        z-index: 10;
+        display: block;
+        width: $b * 20;
+        height: $b * 11.25;
+        margin-left: auto;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+
+        span,
+        &::before,
+        &::after {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: $b;
+            content: "";
+            background-color: $color-text;
+            transition: all 0.3s ease 0s;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        span {
+            top: calc(50% - 1px);
+        }
+
+        &.menu-open {
+            span {
+                transform: scale(0);
+            }
+
+            &::before {
+                top: calc(50% - 1px);
+                transform: rotate(-45deg);
+            }
+
+            &::after {
+                bottom: calc(50% - 1px);
+                transform: rotate(45deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,181 @@
+/* === TABS-MAIN === */
+.tabs-main {
+    // .tabs-main__navigation
+    &__navigation {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax($b * 125, 1fr));
+        gap: $b * 5;
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 60, 20);
+        }
+    }
+    // .tabs-main__title
+    &__title {
+        @include transition(all);
+        @include border-radius;
+        @include animation1(fadeIn, 2s, calc(var(--i) * 0.2s));
+
+        padding: $b * 5;
+        font-weight: $fw-bold;
+        color: $color-wolf-light;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid transparent;
+
+        svg {
+            @include transition(fill);
+
+            width: $b * 7;
+            height: $b * 7;
+            margin-right: $b * 4;
+            fill: $color-wolf-light;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $color-text;
+
+                svg {
+                    fill: $color-text;
+                }
+            }
+        }
+
+        &._tab-active {
+            color: $color-primary;
+            border: 1px solid $color-primary;
+
+            svg {
+                fill: $color-primary;
+            }
+        }
+
+        ._tab-spoller & {
+        }
+    }
+    // .tabs-main__content
+    &__content {
+        @include animation2(zoomIn, 1.2s, 0.2s);
+    }
+    // .tabs-main__body
+    &__body {
+        display: grid;
+        gap: $b * 10;
+
+        @media (min-width: $md2+px) {
+            grid-template-columns: $b * 250 procent(600, 1230);
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.body-tabs-main {
+    // .body-tabs-main__content-title
+    &__content-title {
+        @include adaptiveValue("font-size", 32, 24);
+
+        font-weight: $fw-black;
+        line-height: 130%;
+        color: $color-main-dark;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 12;
+        }
+    }
+    // .body-tabs-main__content-text
+    &__content-text {
+        p {
+            &:not(:last-child) {
+                margin-bottom: $b * 15;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $b * 12;
+        }
+    }
+    // .body-tabs-main__image-ibg
+    &__image-ibg {
+        padding-bottom: procent(440, 600);
+    }
+}
+
+// =============================================
+.tabs-course {
+    // .tabs-course__actions
+    &__actions {
+        @media (min-width: $md2+px) {
+            display: flex;
+            gap: $b * 10;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 70, 10);
+        }
+    }
+    // .tabs-course__search
+    &__search {
+        @include animation1(bounceInLeft, 2s, 0);
+
+        max-width: $b * 155;
+    }
+
+    // .tabs-course__navigation
+    &__navigation {
+        @include animation1(bounceInRight, 2s, 0);
+
+        overflow: auto;
+        white-space: nowrap;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 10;
+        }
+    }
+    // .tabs-course__title
+    &__title {
+        @include transition(color);
+        @include border-radius;
+
+        position: relative;
+        padding: $b * 5 $b * 13 $b * 5 $b * 10;
+        font-weight: $fw-bold;
+        color: $color-wolf-light;
+        text-align: center;
+        white-space: nowrap;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid transparent;
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $color-text;
+            }
+        }
+
+        // .tabs-course__title-num
+        &-num {
+            position: absolute;
+            top: $b * 3;
+            right: $b * 5;
+            font-size: $b * 5;
+            font-weight: $fw-black;
+            line-height: 150%;
+            pointer-events: none;
+        }
+
+        &._tab-active {
+            color: $color-primary;
+            border: 1px solid $color-primary;
+        }
+    }
+    // .tabs-course__content
+    &__content {
+    }
+    // .tabs-course__body
+    &__body {
+    }
+}

@@ -1,0 +1,78 @@
+/* === EVENTS-PAGE === */
+.events-page {
+    // .events-page__events
+    &__events {
+        @include adaptiveValue("padding-bottom", 180, 20);
+
+        padding-top: $b * 100;
+
+        @media (max-width: $md3+px) {
+            padding-top: $b * 50;
+        }
+    }
+    // .events-page__subscribe-form
+    &__subscribe-form {
+        @include adaptiveValue("padding-top", 120, 20);
+        @include adaptiveValue("padding-bottom", 180, 20);
+    }
+}
+
+.events {
+    // .events__titles
+    &__titles {
+        @include title-center;
+        @include title-margin-bottom;
+    }
+    // .events__filter
+    &__filter {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 60, 20);
+        }
+    }
+    // .events__content
+    &__content {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 60, 20);
+        }
+    }
+    // .events__pagination
+    &__pagination {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 60, 20);
+        }
+    }
+}
+
+// =======================
+.content-events {
+    // .content-events__list
+    &__list {
+        @include adaptiveValue("gap", 30, 10);
+
+        display: grid;
+
+        // .content-events__list--col
+        &--col {
+            @media (min-width: $md3+px) {
+                grid-template-columns: repeat(auto-fit, minmax(procent(390, 1230), 1fr));
+            }
+        }
+
+        // .content-events__list--row
+        &--row {
+        }
+    }
+    // .content-events__item
+    &__item {
+        @include transition(transform);
+        @include adaptiveValue("padding", 24, 10);
+        @include border-radius;
+        @include animation2(zoomIn, 1s);
+
+        overflow: hidden;
+        border: 1px solid $color-border;
+        box-shadow: $b * 6 $b * 5 $b * 7 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+// ========================

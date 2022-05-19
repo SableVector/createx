@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CreateX</title>
+	<!-- Подключение стилей сайта -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220511171456">
+	<!-- Подключение скриптов -->
+	<script defer src="js/main.min.js?_v=20220511171456"></script>
+</head>
+
+<body>
+	<div class="wrapper" id="wrapper">
+		<!-- === HEADER === -->
+		<header class="header" id="header" data-animation >
+    <div class="header__container">
+
+        <div class="nav-header__logo logo">
+            <a class="logo__link" href="main-page.html">
+                <img class="logo__img" src="img/logo.svg" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="header__nav nav-header">
+
+            <div class="nav-header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="events.html">Events</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-header__control control-header">
+                <a href="#" class="control-header__link button button--large button__colored">
+                    Get consultation
+                </a>
+                <div class="control-header__options options-header">
+                    <svg>
+                        <use xlink:href="img/symbol/icons.svg#account"></use>
+                    </svg>
+                    <button class="options-header__button" type="button" data-modal-open = "sign-in">Log in</button>/<button
+                        class="options-header__button" type="button" data-modal-open = "sign-up">Register</button>
+                </div>
+            </div>
+
+        </nav>
+
+        <button class="menu__icon icon-menu" id="burger" aria-label="menu burger">
+            <span></span>
+        </button>
+    </div>
+</header>
+		<!-- === MAIN === -->
+		<main class="page__event event-page">
+
+			<section class="event-page__presentation presentation">
+				<div class="presentation__header header-presentation">
+					<div class="header-presentation__container" data-animation>
+						<div class="header-presentation__suptitle suptitle">
+							Online lecture
+						</div>
+						<h1 class="header-presentation__title title">
+							Formation of the organizational structure of the company in the face of uncertainty
+						</h1>
+					</div>
+				</div>
+				<div class="presentation__body body-presentation">
+					<div class="body-presentation__container">
+						<div class="body-presentation__inner">
+							<div class="body-presentation__descr descr-presentation" data-animation>
+								<div class="descr-presentation__top top-presentation-descr">
+									<h2 class="top-presentation-descr__title title">We will talk about:</h2>
+									<div class="top-presentation-descr__accordion accordion">
+										<ul class="accordion__list" data-spollers data-one-spoller>
+											<li class="accordion__item" data-animation>
+												<button class="accordion__title" type="button" tabindex="-1"
+													data-spoller>
+													<span>Lesson 1.</span>
+													Aliquet lectus urna viverra in odio.
+												</button>
+												<div class="accordion__body">
+													<p>
+														Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+														pulvinar
+														aliquet donec enim, ornare. Lacus facilisi curabitur turpis
+														varius
+														mauris. Nisi, tempus risus, odio mi suscipit sed. Curabitur
+														faucibus
+														porttitor quis sem lacus, arcu feugiat facilisis. Commodo nunc
+														orci
+														vitae accumsan id.
+													</p>
+												</div>
+											</li>
+											<li class="accordion__item" data-animation>
+												<button class="accordion__title" type="button" tabindex="-1"
+													data-spoller>
+													<span>Lesson 2.</span>
+													Orci commodo, viverra orci mollis ut euismod.
+												</button>
+												<div class="accordion__body">
+													<p>
+														Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+														pulvinar
+														aliquet donec enim, ornare. Lacus facilisi curabitur turpis
+														varius
+														mauris. Nisi,
+														tempus
+														risus, odio mi suscipit sed. Curabitur faucibus porttitor quis
+														sem
+														lacus, arcu
+														feugiat
+														facilisis. Commodo nunc orci vitae accumsan id.
+													</p>
+												</div>
+											</li>
+											<li class="accordion__item" data-animation>
+												<button class="accordion__title" type="button" tabindex="-1"
+													data-spoller>
+													<span>Lesson 3.</span>
+													Sagittis vitae facilisi rutrum amet mauris quisque vel.
+												</button>
+												<div class="accordion__body">
+													<p>
+														Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+														pulvinar
+														aliquet donec enim, ornare. Lacus facilisi curabitur turpis
+														varius
+														mauris. Nisi,
+														tempus
+														risus, odio mi suscipit sed. Curabitur faucibus porttitor quis
+														sem
+														lacus, arcu
+														feugiat
+														facilisis. Commodo nunc orci vitae accumsan id.
+													</p>
+												</div>
+											</li>
+											<li class="accordion__item" data-animation>
+												<button class="accordion__title" type="button" tabindex="-1"
+													data-spoller>
+													<span>Lesson 4.</span>
+													In id dolor quis nunc, urna hendrerit pharetra.
+												</button>
+												<div class="accordion__body">
+													<p>
+														Nulla amet, sagittis potenti rhoncus sit. Elit lectus nec
+														pulvinar
+														aliquet donec enim, ornare. Lacus facilisi curabitur turpis
+														varius
+														mauris. Nisi,
+														tempus
+														risus, odio mi suscipit sed. Curabitur faucibus porttitor quis
+														sem
+														lacus, arcu
+														feugiat
+														facilisis. Commodo nunc orci vitae accumsan id.
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="body-presentation__card card-presentation" data-animation>
+								<ul class="card-presentation__list">
+									<li class="card-presentation__item item-card-presentation">
+										<div class="item-card-presentation__title">Time</div>
+										<div class="item-card-presentation__subtitle">August 5, 11:00 – 14:00</div>
+										<p class="item-card-presentation__text">Metus turpis sit lorem lacus, in elit
+											tellus
+											lacus.</p>
+									</li>
+									<li class="card-presentation__item item-card-presentation">
+										<div class="item-card-presentation__title">Price</div>
+										<div class="item-card-presentation__subtitle">Free</div>
+										<p class="item-card-presentation__text">Nulla sem adipiscing adipiscing felis
+											fringilla.
+											Adipiscing mauris quam ac elit tristique dis.</p>
+									</li>
+									<li class="card-presentation__item item-card-presentation">
+										<a class="item-card-presentation__link" href="#">Event on Facebook</a>
+									</li>
+								</ul>
+								<a class="card-presentation__button button button--large button__colored" href="#">Join
+									the
+									course</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="event-page__curator curator">
+				<div class="curator__container">
+					<div class="curator__wrapper">
+						<div class="curator__image image-curator" data-animation>
+							<div class="image-curator__image-ibg image-curator__image-ibg_contain">
+								<picture><source srcset="img/team/lector_06.webp" type="image/webp"><img src="img/team/lector_06.png" alt="photo Cody Fisher"></picture>
+							</div>
+						</div>
+						<div class="curator__content content-curator">
+							<div class="content-curator__titles block-header" data-animation>
+								<div class="block-header__suptitle suptitle">Speaker</div>
+								<h2 class="block-header__title title">Kathryn Murphy</h2>
+							</div>
+							<div class="content-curator__body body-content-curator">
+								<div class="body-content-curator__header" data-animation>Analyst and Marketing
+									specialist in IT company
+								</div>
+								<p class="body-content-curator__text" data-animation>
+									Mattis adipiscing aliquam eu proin metus a iaculis faucibus. Tempus curabitur
+									venenatis,
+									vulputate venenatis fermentum ante. Nisl, amet id semper semper quis commodo,
+									consequat.
+									Massa rhoncus sit morbi odio. Sit maecenas nibh consectetur vel diam. Sem vulputate
+									molestie
+									laoreet at massa sed pharetra. Ac commodo platea id habitasse proin. Nullam sit nec
+									ipsum
+									posuere non. Nam vel aliquam tristique sollicitudin interdum quam.
+								</p>
+								<ul class="body-content-curator__organizations organizations" data-animation>
+									<li class="organizations__img organizations__img--gray">
+										<img src="img/organizations/Del_mar_strategy_logo.jpg"
+											alt="Del Mar Strategy logo">
+									</li>
+									<li class="organizations__img organizations__img--gray">
+										<img src="img/organizations/sentinal_consulting_logo.png"
+											alt="Sentinal Consulting logo">
+									</li>
+									<li class="organizations__img organizations__img--gray">
+										<picture><source srcset="img/organizations/national.webp" type="image/webp"><img src="img/organizations/national.png" alt="National logo"></picture>
+									</li>
+								</ul>
+								<ul class="body-content-curator__socials socials-items" data-animation>
+									<li class="socials-items__item">
+										<a class="socials-items__link" href="#">
+											<svg>
+												<use xlink:href="img/symbol/icons.svg#facebook"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials-items__item">
+										<a class="socials-items__link" href="#">
+											<svg>
+												<use xlink:href="img/symbol/icons.svg#behance"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials-items__item">
+										<a class="socials-items__link" href="#">
+											<svg>
+												<use xlink:href="img/symbol/icons.svg#twitter"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="socials-items__item">
+										<a class="socials-items__link" href="#">
+											<svg>
+												<use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="event-page__question question">
+				<div class="question__container">
+					<div class="question__col">
+						<div class="question__titles block-header" data-animation>
+							<div class="block-header__suptitle suptitle">For whom?</div>
+							<h2 class="block-header__title title">Who will benefit from the event:</h2>
+						</div>
+					</div>
+					<div class="question__col">
+						<ul class="question__list" data-animation>
+							<li class="question__item content-list-item">Specialists with more than 1 year of active
+								work
+								experience</li>
+							<li class="question__item content-list-item">Mobile app designers who want to improve their
+								skills
+								in solving business
+								problems, creating and testing human-centered interfaces</li>
+							<li class="question__item content-list-item">Professional designers who want to feel more
+								confident
+								in UX</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="event-page__mailings mailings">
+				<div class="mailings__container">
+					<div class="mailings__box">
+						<div class="mailings__image" data-animation>
+							<picture><source srcset="img/event/mailings/illustration.webp" type="image/webp"><img src="img/event/mailings/illustration.png" alt="illustration"></picture>
+						</div>
+						<div class="mailings__form form-mailings" data-animation>
+							<h3 class="form-mailings__title">Don’t want to miss the best events?
+								Subscribe to our newsletter!</h3>
+							<form class="form-mailings__form form-page" action="#" data-form>
+								<div class="form-page__inner form-page__inner--df form-page__inner--mb">
+									<div class="form-page__input">
+										<input autocomplete="off" type="text" name="form[email]" data-error="Ошибка"
+											placeholder="Your working email" id="form-mailings-email" data-req>
+									</div>
+									<button class="form-page__button button button--large button__colored"
+										type="submit">Subscribe</button>
+								</div>
+								<div class="form-page__checkbox checkbox">
+									<input class="checkbox__input" id="c_1" type="checkbox"
+										name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+									<label class="checkbox__label" for="c_1"><span class="checkbox__text">I agree to
+											receive
+											communications from Createx Online School</span></label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="event-page__register register">
+				<div class="register__container register__container--row">
+					<div class="register__image" data-animation>
+						<picture><source srcset="img/event/register/illustration.webp" type="image/webp"><img src="img/event/register/illustration.png" alt="illustration"></picture>
+					</div>
+
+					<div class="register__form form-register" data-animation>
+						<div class="form-register__titles block-header">
+							<div class="block-header__suptitle suptitle">Don’t miss the event</div>
+							<h2 class="block-header__title title">Leave a request</h2>
+						</div>
+
+						<div class="form-register__body">
+							<form class="form-register__form form-page" action="#" data-form>
+								<div class="form-register__inner form-page__inner">
+									<label class="form-register__label form-page__label" for="register-form-name">Full
+										name</label>
+									<div class="form-register__input form-page__input">
+										<input autocomplete="off" type="text" name="form[name]" data-error="Ошибка"
+											placeholder="Your full name" id="register-form-name" data-req>
+									</div>
+								</div>
+								<div class="form-register__inner form-page__inner">
+									<label class="form-register__label form-page__label"
+										for="register-form-email">Email</label>
+									<div class="form-register__input form-page__input">
+										<input autocomplete="off" type="email" name="form[email]" data-error="Ошибка"
+											placeholder="Your working email" id="register-form-email" data-req>
+									</div>
+								</div>
+								<div class="form-register__inner form-page__inner">
+									<label class="form-register__label form-page__label"
+										for="register-form-email">Phone</label>
+									<div class="form-register__input form-page__input">
+										<input autocomplete="off" type="text" name="form[phone]" data-error="Ошибка"
+											placeholder="Your phone number" id="register-form-phone">
+									</div>
+								</div>
+								<button
+									class="form-register__button form-page__button button button--large button__colored"
+									type="submit">Join the
+									event</button>
+								<div class="form-register__text">* You will receive a link to the online lecture in an
+									email
+									after registration.</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="event-page__carousel carousel">
+				<div class="carousel__container">
+					<div class="carousel__content content-events">
+						<div class="carousel__titles block-header" data-animation>
+							<div class="block-header__suptitle suptitle">Check other online events</div>
+							<h2 class="block-header__title title">You may be interested in</h2>
+						</div>
+
+						<div
+							class="carousel__slider slider-carousel slider-carousel--col3 slider content-events__list--col" data-animation>
+							<div class="slider-carousel__control slider__control">
+								<button class="slider-carousel__slider-button-prev slider__btn slider__btn--prev"
+									type="button">
+									<svg>
+										<use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+									</svg>
+								</button>
+								<button class="slider-carousel__slider-button-next slider__btn slider__btn--next"
+									type="button">
+									<svg>
+										<use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+									</svg>
+								</button>
+							</div>
+							<div class="slider-carousel__swiper slider__swiper">
+								<div class="slider-carousel__slide slider__slide">
+
+									<div class="item-event content-events__item" data-animation>
+										<div class="item-event__header">
+											<div class="item-event__title">05 Aug </div>
+											<div class="item-event__subtitle">11:00 – 14:00</div>
+										</div>
+										<div class="item-event__body">
+											<a class="item-event__link">Formation of the organizational structure of the
+												company
+												in
+												the
+												face of uncertainty.</a>
+											<div class="item-event__descr">Onine master-class</div>
+										</div>
+										<div class="item-event__footer">
+											<a class="item-event__button button button--large button__border">View
+												more</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="slider-carousel__slide slider__slide">
+
+									<div class="item-event content-events__item" data-animation>
+										<div class="item-event__header">
+											<div class="item-event__title">24 Jul</div>
+											<div class="item-event__subtitle">11:00 – 12:30</div>
+										</div>
+										<div class="item-event__body">
+											<a class="item-event__link">Building a customer service department. Best
+												Practices.</a>
+											<div class="item-event__descr">Onine lecture</div>
+										</div>
+										<div class="item-event__footer">
+											<a class="item-event__button button button--large button__border">View
+												more</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="slider-carousel__slide slider__slide">
+
+									<div class="item-event content-events__item" data-animation>
+										<div class="item-event__header">
+											<div class="item-event__title">16 Jul</div>
+											<div class="item-event__subtitle">10:00 – 13:00</div>
+										</div>
+										<div class="item-event__body">
+											<a class="item-event__link">How to apply methods of speculative design in
+												practice.
+												Worldbuilding prototyping.</a>
+											<div class="item-event__descr">10:00 – 13:00</div>
+										</div>
+										<div class="item-event__footer">
+											<a class="item-event__button button button--large button__border">View
+												more</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="slider-carousel__slide slider__slide">
+
+									<div class="item-event content-events__item" data-animation>
+										<div class="item-event__header">
+											<div class="item-event__title">10 Jul</div>
+											<div class="item-event__subtitle">9:00 – 14:00</div>
+										</div>
+										<div class="item-event__body">
+											<a class="item-event__link">Find and evaluate: search and assessment tools
+												for
+												candidates.</a>
+											<div class="item-event__descr">Onine workshop</div>
+										</div>
+										<div class="item-event__footer">
+											<a class="item-event__button button button--large button__border">View
+												more</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="slider-carousel__slide slider__slide">
+
+									<div class="item-event content-events__item" data-animation>
+										<div class="item-event__header">
+											<div class="item-event__title">05 Aug </div>
+											<div class="item-event__subtitle">11:00 – 14:00</div>
+										</div>
+										<div class="item-event__body">
+											<a class="item-event__link">Formation of the organizational structure of the
+												company
+												in
+												the
+												face of uncertainty.</a>
+											<div class="item-event__descr">Onine master-class</div>
+										</div>
+										<div class="item-event__footer">
+											<a class="item-event__button button button--large button__border">View
+												more</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="slider-carousel__slide slider__slide">
+
+									<div class="item-event content-events__item" data-animation>
+										<div class="item-event__header">
+											<div class="item-event__title">24 Jul</div>
+											<div class="item-event__subtitle">11:00 – 12:30</div>
+										</div>
+										<div class="item-event__body">
+											<a class="item-event__link">Building a customer service department. Best
+												Practices.</a>
+											<div class="item-event__descr">Onine lecture</div>
+										</div>
+										<div class="item-event__footer">
+											<a class="item-event__button button button--large button__border">View
+												more</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="slider-carousel__slide slider__slide">
+
+									<div class="item-event content-events__item" data-animation>
+										<div class="item-event__header">
+											<div class="item-event__title">16 Jul</div>
+											<div class="item-event__subtitle">10:00 – 13:00</div>
+										</div>
+										<div class="item-event__body">
+											<a class="item-event__link">How to apply methods of speculative design in
+												practice.
+												Worldbuilding prototyping.</a>
+											<div class="item-event__descr">10:00 – 13:00</div>
+										</div>
+										<div class="item-event__footer">
+											<a class="item-event__button button button--large button__border">View
+												more</a>
+										</div>
+									</div>
+
+								</div>
+								<div class="slider-carousel__slide slider__slide">
+
+									<div class="item-event content-events__item" data-animation>
+										<div class="item-event__header">
+											<div class="item-event__title">10 Jul</div>
+											<div class="item-event__subtitle">9:00 – 14:00</div>
+										</div>
+										<div class="item-event__body">
+											<a class="item-event__link">Find and evaluate: search and assessment tools
+												for
+												candidates.</a>
+											<div class="item-event__descr">Onine workshop</div>
+										</div>
+										<div class="item-event__footer">
+											<a class="item-event__button button button--large button__border">View
+												more</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel__bottom bottom-question" data-animation>
+							<span class="bottom-question__text">Do you want more?</span>
+							<a class="bottom-question__button button button--large button__colored"
+								href="events.html">Explore
+								all events</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<!-- === FOOTER === -->
+		<footer class="footer">
+    <div class="footer__top top-footer">
+        <div class="top-footer__container">
+
+            <div class="top-footer__socials socials-top-footer" data-animation>
+                <div class="socials-top-footer__logo logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__img" src="img/logo-footer.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="socials-top-footer__text">
+                    <p>
+                        Createx Online School is a leader in online studying. We have lots of courses and programs from
+                        the main market experts. We provide relevant approaches to online learning, internships and
+                        employment in the largest companies in the country.
+                    </p>
+                </div>
+                <div class="socials-top-footer__icons footer-icons-socials">
+                    <ul class="footer-icons-socials__list">
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="top-footer__spollers spollers-top-footer" data-spollers="767.98,max" data-animation="">
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>SITE
+                        MAP</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">About Us</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Courses</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Events</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Blog</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>COURSES</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Marketing</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Management</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">HR & Recruting</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Design</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Development</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>CONTACT
+                        US</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="tel:+784055550128">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#iPhone"></use>
+                                        </svg>
+                                        (405) 555-0128
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="mailto:hello@createx.com">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#mail"></use>
+                                        </svg>
+                                        hello@createx.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>SIGN UP TO
+                        OUR
+                        NEWSLETTER</button>
+                    <div class="spollers-top-footer__body">
+                        <form class="top-footer__form form-footer" action="#" data-form>
+                            <div class="form-footer__body">
+                                <div class="form-footer__input">
+                                    <input autocomplete="off" type="email" name="form[email]" data-error="Ошибка"
+                                        placeholder="Email address" data-req>
+                                </div>
+                                <button class="form-footer__button">
+                                    <svg>
+                                        <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="form-footer__text">
+                            <p>
+                                *Subscribe to our newsletter to receive communications and early updates
+                                from Createx SEO Agency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__bottom bootom-footer" data-animation>
+        <div class="bootom-footer__container">
+            <div class="bootom-footer__copy">
+                © All rights reserved. Made with <span>&#9825;</span> by Createx Studio
+            </div>
+            <a class="bootom-footer__button" href="#wrapper" data-smooth>GO TO TOP</a>
+        </div>
+    </div>
+</footer>
+	</div>
+
+	<!-- === POPUP === -->
+	<div class="popup" data-modal="sign-in" id="popup-sigin-in">
+    <div class="popup__container">
+        <div class="popup__body popup-body">
+            <button class="popup-body__close" type="button">
+                <svg>
+                    <use xlink:href="img/symbol/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="popup-body__header">
+                <h3 class="popup-body__header-title">Sign in</h3>
+                <p class="popup-body__header-subtitle">Sign in to your account using email and password provided during
+                    registration.</p>
+            </div>
+            <div class="popup-body__main">
+                <form class="popup-body__form form-page" action="#" data-form>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-in-popup-form-email">Email*</label>
+                        <div class="form-page__input">
+                            <input type="email" name="form[email]" data-error="Ошибка" placeholder="Your working email"
+                                id="sign-in-popup-form-email" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-in-popup-form-password">Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="sign-in-popup-form-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-page__row">
+                        <div class="form-page__checkbox form-page__checkbox--flex45 checkbox">
+                            <input class="checkbox__input" id="popup-c_1" type="checkbox"
+                                name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+                            <label class="checkbox__label" for="popup-c_1"><span class="checkbox__text">Keep me signed
+                                    in</span></label>
+                        </div>
+                        <a class="form-page__link" href="#">Forgot password?</a>
+                    </div>
+
+                    <button class="button button--large button__colored _fw" type="submit">
+                        Sign in
+                    </button>
+                    <div class="popup__body__text">
+                        Don't have an account?
+                        <a class="form-page__link" href="#">
+                            Sign up
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-body__footer">
+                <div class="popup-body__footer-title">Or sign in with</div>
+                <ul class="popup-body__footer-socials socials-items">
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup" data-modal="sign-up" id="popup-sigin-up">
+    <div class="popup__container">
+        <div class="popup__body popup-body">
+            <button class="popup-body__close" type="button">
+                <svg>
+                    <use xlink:href="img/symbol/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="popup-body__header">
+                <h3 class="popup-body__header-title">Sign up</h3>
+                <p class="popup-body__header-subtitle">Registration takes less than a minute but gives you full control
+                    over your studying.</p>
+            </div>
+            <div class="popup-body__main">
+                <form class="popup-body__form form-page" action="#" data-form>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-name">Full Name*</label>
+                        <div class="form-page__input">
+                            <input type="text" name="form[name]" data-error="Ошибка" placeholder="Your full name"
+                                id="sign-up-popup-form-name" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-email">Email*</label>
+                        <div class="form-page__input">
+                            <input type="email" name="form[email]" data-error="Ошибка" placeholder="Your working email"
+                                id="sign-up-popup-form-email" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-password">Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="sign-up-popup-form-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="popup-form-confirm-password">Confirm Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="popup-form-confirm-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-page__row">
+                        <div class="form-page__checkbox form-page__checkbox--flex45 checkbox">
+                            <input class="checkbox__input" id="popup-c_2" type="checkbox"
+                                name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+                            <label class="checkbox__label" for="popup-c_2"><span class="checkbox__text">Remember
+                                    me</span></label>
+                        </div>
+                    </div>
+
+                    <button class="form-page__button button button--large button__colored _fw" type="submit">
+                        Sign up
+                    </button>
+                    <div class="popup__body__text">
+                        Already have an account?
+                        <a class="form-page__link" href="#">
+                            Sign in
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-body__footer">
+                <div class="popup-body__footer-title"></div>
+                <ul class="popup-body__footer-socials socials-items">
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+/* === COURSE === */
+.course-page {
+    // .course-page__presentation
+    &__presentation {
+        @include adaptiveValue("padding-bottom", 114, 20);
+    }
+    // .course-page__curator
+    &__curator {
+        @include adaptiveValue("padding-top", 66, 20);
+        @include adaptiveValue("padding-bottom", 90, 20);
+    }
+    // .course-page__steps
+    &__steps {
+        @include adaptiveValue("padding-top", 90, 20);
+        @include adaptiveValue("padding-bottom", 90, 20);
+    }
+    // .course-page__question
+    &__question {
+        @include adaptiveValue("padding-top", 90, 20);
+        @include adaptiveValue("padding-bottom", 90, 20);
+    }
+    // .course-page__program
+    &__program {
+        @include adaptiveValue("padding-top", 90, 20);
+        @include adaptiveValue("padding-bottom", 60, 20);
+    }
+    // .course-page__testimonials
+    &__testimonials {
+        @include adaptiveValue("padding-top", 80, 20);
+        @include adaptiveValue("padding-bottom", 90, 20);
+    }
+    // .course-page__register
+    &__register {
+        @include adaptiveValue("padding-top", 90, 20);
+        @include adaptiveValue("padding-bottom", 100, 20);
+    }
+    // .course-page__carousel
+    &__carousel {
+        @include adaptiveValue("padding-top", 120, 20);
+        @include adaptiveValue("padding-bottom", 180, 20);
+    }
+}
+// =========================================================
+.steps {
+    // .steps__container
+    &__container {
+    }
+    // .steps__top
+    &__top {
+        @include adaptiveValue("margin-bottom", 180, 30);
+    }
+    // .steps__titles
+    &__titles {
+        @include title-center;
+        @include title-margin-bottom;
+    }
+    // .steps__items
+    &__items {
+    }
+    // .steps__bottom
+    &__bottom {
+        @include adaptiveValue("padding-top", 38, 20);
+        @include adaptiveValue("padding-right", 60, 20);
+        @include adaptiveValue("padding-bottom", 38, 20);
+        @include adaptiveValue("padding-left", 60, 20);
+    }
+}
+
+.items-steps {
+    // .items-steps__list
+    &__list {
+        @media (min-width: $md3+px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+    // .items-steps__item
+    &__item {
+        @include animation1(zoomIn, 1s, calc(var(--i) * 0.2s));
+
+        position: relative;
+        flex: 0 1 22%;
+
+        @media (min-width: $md3+px) {
+            &:not(:last-child) {
+                &::before {
+                    @include transition(border-top);
+
+                    position: absolute;
+                    top: 3.482759em;
+                    left: 0;
+                    width: 100%;
+                    content: "";
+                    border-top: 1px dashed $color-input;
+                }
+            }
+        }
+
+        @media (max-width: $md3+px) {
+            &::before {
+                position: absolute;
+                left: 3em;
+                height: 100%;
+                content: "";
+                border-left: 1px dashed $color-input;
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                &:not(:last-child) {
+                    &::before {
+                        border-top: 1px dashed $color-primary;
+                    }
+                }
+
+                .items-steps__num {
+                    color: $color-primary;
+
+                    &::before {
+                        background-color: rgba($color-primary, 0.12);
+                    }
+
+                    &::after {
+                        background-color: rgba($color-primary, 0.06);
+                    }
+                }
+            }
+        }
+    }
+    // .items-steps__num
+    &__num {
+        @include adaptiveValue("font-size", 46, 28);
+        @include transition(all);
+
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5217391304347827em;
+        height: 2.5217391304347827em;
+        font-weight: $fw-black;
+        line-height: 130%;
+        color: $color-input;
+        background-color: #fff;
+        border-radius: 50%;
+
+        @media (min-width: $md3+px) {
+            margin-left: -12%;
+        }
+
+        &::before,
+        &::after {
+            @include transition(background-color);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: "";
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &::before {
+            width: 1.826086956521739em;
+            height: 1.826086956521739em;
+            background-color: transparent;
+        }
+
+        &::after {
+            width: 2.5217391304347827em;
+            height: 2.5217391304347827em;
+            background-color: transparent;
+        }
+    }
+    // .items-steps__title
+    &__title {
+        @include adaptiveValue("font-size", 20, 18);
+
+        font-weight: $fw-bold;
+        line-height: 150%;
+        color: $color-main-dark;
+
+        @media (max-width: $md3+px) {
+            @include adaptiveValue("padding-left", 100, 70);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $b * 4;
+        }
+    }
+    // .items-steps__text
+    &__text {
+        color: $color-wolf;
+
+        @media (max-width: $md3+px) {
+            @include adaptiveValue("padding-left", 100, 70);
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+}
+
+.discount {
+    @include border-radius;
+    @include transition(transform);
+    @include animation2(fadeInLeft, 1s, 0);
+
+    position: relative;
+    overflow: hidden;
+    background: $color-bg;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        content: "";
+        background: url("../img/course/discount/bg.png") center top no-repeat;
+    }
+    // .discount__header
+    &__header {
+        padding: $b * 5 0;
+        margin: 0 -$b * 2.5;
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 22, 15);
+        }
+
+        @media (min-width: $md3+px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+    // .discount__title
+    &__title {
+        @include adaptiveValue("font-size", 32, 20);
+        @include animation1(bounceInDown, 2s, 0.2s);
+
+        padding: 0 $b * 2.5;
+        font-weight: $fw-black;
+        line-height: 130%;
+        color: $color-main-dark;
+
+        @media (min-width: $md3+px) {
+            flex: 1 1 auto;
+        }
+
+        @media (max-width: $md3+px) {
+            text-align: center;
+
+            &:not(:last-child) {
+                margin-bottom: $b * 10;
+            }
+        }
+    }
+    // .discount__countdown
+    &__countdown {
+        @include animation1(fadeIn, 2s, 2s);
+
+        padding: 0 $b * 2.5;
+
+        @media (min-width: $md3+px) {
+            flex: 0 0 $b * 91;
+        }
+    }
+    // .discount__form
+    &__form {
+        @include animation1(bounceInUp, 2s, 0.2s);
+
+        padding: $b * 5 0;
+    }
+}
+
+.countdown {
+    display: flex;
+    align-items: flex-start;
+    color: $color-main-dark;
+
+    @media (min-width: $md3+px) {
+        justify-content: space-between;
+    }
+
+    @media (max-width: $md3+px) {
+        justify-content: center;
+    }
+    // .countdown__item
+    &__item {
+        padding: 0 $b * 5;
+    }
+    // .countdown__num
+    &__num {
+        @include adaptiveValue("font-size", 20, 16);
+
+        font-weight: $fw-bold;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+    // .countdown__descr
+    &__descr {
+        font-size: $b * 6;
+        line-height: 150%;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+}
+
+.form-discount {
+    // .form-discount__form
+    &__form {
+        @include adaptiveValue("gap", 24, 10);
+
+        display: flex;
+    }
+}

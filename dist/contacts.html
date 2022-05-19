@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CreateX</title>
+	<!-- Подключение стилей сайта -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220511171456">
+	<!-- Подключение скриптов -->
+	<script defer src="js/main.min.js?_v=20220511171456"></script>
+</head>
+
+<body>
+	<div class="wrapper" id="wrapper">
+        <!-- === HEADER === -->
+        <header class="header" id="header" data-animation >
+    <div class="header__container">
+
+        <div class="nav-header__logo logo">
+            <a class="logo__link" href="main-page.html">
+                <img class="logo__img" src="img/logo.svg" alt="Logo">
+            </a>
+        </div>
+
+        <nav class="header__nav nav-header">
+
+            <div class="nav-header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="events.html">Events</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-header__control control-header">
+                <a href="#" class="control-header__link button button--large button__colored">
+                    Get consultation
+                </a>
+                <div class="control-header__options options-header">
+                    <svg>
+                        <use xlink:href="img/symbol/icons.svg#account"></use>
+                    </svg>
+                    <button class="options-header__button" type="button" data-modal-open = "sign-in">Log in</button>/<button
+                        class="options-header__button" type="button" data-modal-open = "sign-up">Register</button>
+                </div>
+            </div>
+
+        </nav>
+
+        <button class="menu__icon icon-menu" id="burger" aria-label="menu burger">
+            <span></span>
+        </button>
+    </div>
+</header>
+        <!-- === MAIN === -->
+        <main class="page__contacts contacts-page">
+
+            <section class="contacts-page__contact-info contact-info">
+                <div class="contact-info__container">
+                    <div class="contact-info__content">
+                        <div class="contact-info__titles block-header" data-animation>
+                            <div class="block-header__suptitle suptitle">Contact info</div>
+                            <h2 class="block-header__title title">Get in touch</h2>
+                        </div>
+                        <div class="contact-info__body">
+                            <ul class="contact-info__body-list" data-animation>
+                                <li class="contact-info__body-item item-contact">
+                                    <div class="item-contact__icon">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#chat"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="item-contact__body">
+                                        <div class="item-contact__title">Talk to us:</div>
+                                        <a class="item-contact__link"
+                                            href="mailto:hello@createx.com">hello@createx.com</a>
+                                    </div>
+                                </li>
+                                <li class="contact-info__body-item item-contact">
+                                    <div class="item-contact__icon">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#iPhone"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="item-contact__body">
+                                        <div class="item-contact__title">Call us:</div>
+                                        <a class="item-contact__link" href="tel:+484055550128">(405) 555-0128</a>
+                                    </div>
+                                </li>
+                                <li class="contact-info__body-item item-contact">
+                                    <div class="item-contact__icon">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#outline"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="item-contact__body">
+                                        <div class="item-contact__title">Address:</div>
+                                        <address class="item-contact__text">
+                                            45463 New Jersey Avenue, Brooklyn, New York, USA
+                                        </address>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-info__footer">
+                            <div class="contact-info__footer-title">Follow us:</div>
+                            <ul class="contact-info__footer-socials socials-items" data-animation>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#telegram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-items__item">
+                                    <a class="socials-items__link" href="#">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contact-info__map" data-animation>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.3975209461737!2d-73.8953202852288!3d40.66520934841475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c54e51dc979%3A0x66450d7c7169a1d7!2zTmV3IEplcnNleSBBdmUsIEJyb29rbHluLCBOWSAxMTIwNywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1645636830505!5m2!1sru!2sua"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts-page__questions contacts-questions">
+                <div class="contacts-questions__container">
+                    <div class="contacts-questions__image" data-animation>
+                        <img src="img/contacts/illustration.svg" alt="illustration">
+                    </div>
+                    <div class="contacts-questions__form form-contacts">
+                        <div class="form-contacts__titles block-header" data-animation>
+                            <div class="block-header__suptitle suptitle">Any questions?</div>
+                            <h2 class="block-header__title title">Drop us a line</h2>
+                        </div>
+
+                        <form class="form-contacts__form form-page" action="#" data-form data-animation>
+
+                            <div class="form-page__row">
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-first-name">First
+                                        Name*</label>
+                                    <div class="form-contacts__input form-page__input">
+                                        <input autocomplete="off" type="text" name="form[first-name]" data-error="Ошибка"
+                                            placeholder="Your first name" id="contacts-form-first-name" data-req>
+                                    </div>
+                                </div>
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-last-name">Last
+                                        Name*</label>
+                                    <div class="form-contacts__input form-page__input">
+                                        <input autocomplete="off" type="text" name="form[last-name]" data-error="Ошибка"
+                                            placeholder="Your last name" id="contacts-form-last-name" data-req>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-page__row">
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-email">Email*</label>
+                                    <div class="form-contacts__input form-page__input">
+                                        <input autocomplete="off" type="email" name="form[email]" data-error="Ошибка"
+                                            placeholder="Your working email" id="contacts-form-email" data-req>
+                                    </div>
+                                </div>
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-phone">Phone</label>
+                                    <div class="form-contacts__input form-page__input">
+                                        <input autocomplete="off" type="number" name="form[phone]" data-error="Ошибка"
+                                            placeholder="Your phone number" id="contacts-form-phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-page__row">
+                                <div class="form-page__inner">
+                                    <label class="form-page__label" for="contacts-form-message">Message*</label>
+                                    <div class="form-page__textarea">
+                                        <textarea name="message" id="contacts-form-message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-page__row">
+                                <div class="form-page__checkbox form-page__checkbox--flex45 checkbox">
+                                    <input class="checkbox__input" id="c_1" type="checkbox"
+                                        name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+                                    <label class="checkbox__label" for="c_1"><span class="checkbox__text">I agree to
+                                            receive
+                                            communications from Createx Online School</span></label>
+                                </div>
+
+                                <button class="form-page__button form-page__button--flex45 button button--large button__colored"
+                                    type="submit">
+                                    Send message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- === FOOTER === -->
+        <footer class="footer">
+    <div class="footer__top top-footer">
+        <div class="top-footer__container">
+
+            <div class="top-footer__socials socials-top-footer" data-animation>
+                <div class="socials-top-footer__logo logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__img" src="img/logo-footer.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <div class="socials-top-footer__text">
+                    <p>
+                        Createx Online School is a leader in online studying. We have lots of courses and programs from
+                        the main market experts. We provide relevant approaches to online learning, internships and
+                        employment in the largest companies in the country.
+                    </p>
+                </div>
+                <div class="socials-top-footer__icons footer-icons-socials">
+                    <ul class="footer-icons-socials__list">
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-icons-socials__item">
+                            <a class="footer-icons-socials__link" href="#">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="top-footer__spollers spollers-top-footer" data-spollers="767.98,max" data-animation="">
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>SITE
+                        MAP</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">About Us</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Courses</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Events</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Blog</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>COURSES</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Marketing</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Management</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">HR & Recruting</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Design</a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="#">Development</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>CONTACT
+                        US</button>
+                    <div class="spollers-top-footer__body">
+                        <nav class="menu-footer">
+                            <ul class="menu-footer__list">
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="tel:+784055550128">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#iPhone"></use>
+                                        </svg>
+                                        (405) 555-0128
+                                    </a>
+                                </li>
+                                <li class="menu-footer__item">
+                                    <a class="menu-footer__link" href="mailto:hello@createx.com">
+                                        <svg>
+                                            <use xlink:href="img/symbol/icons.svg#mail"></use>
+                                        </svg>
+                                        hello@createx.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="spollers-top-footer__item">
+                    <button class="spollers-top-footer__title" type="button" tabindex="-1" data-spoller>SIGN UP TO
+                        OUR
+                        NEWSLETTER</button>
+                    <div class="spollers-top-footer__body">
+                        <form class="top-footer__form form-footer" action="#" data-form>
+                            <div class="form-footer__body">
+                                <div class="form-footer__input">
+                                    <input autocomplete="off" type="email" name="form[email]" data-error="Ошибка"
+                                        placeholder="Email address" data-req>
+                                </div>
+                                <button class="form-footer__button">
+                                    <svg>
+                                        <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="form-footer__text">
+                            <p>
+                                *Subscribe to our newsletter to receive communications and early updates
+                                from Createx SEO Agency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__bottom bootom-footer" data-animation>
+        <div class="bootom-footer__container">
+            <div class="bootom-footer__copy">
+                © All rights reserved. Made with <span>&#9825;</span> by Createx Studio
+            </div>
+            <a class="bootom-footer__button" href="#wrapper" data-smooth>GO TO TOP</a>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    <!-- === POPUP === -->
+    <div class="popup" data-modal="sign-in" id="popup-sigin-in">
+    <div class="popup__container">
+        <div class="popup__body popup-body">
+            <button class="popup-body__close" type="button">
+                <svg>
+                    <use xlink:href="img/symbol/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="popup-body__header">
+                <h3 class="popup-body__header-title">Sign in</h3>
+                <p class="popup-body__header-subtitle">Sign in to your account using email and password provided during
+                    registration.</p>
+            </div>
+            <div class="popup-body__main">
+                <form class="popup-body__form form-page" action="#" data-form>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-in-popup-form-email">Email*</label>
+                        <div class="form-page__input">
+                            <input type="email" name="form[email]" data-error="Ошибка" placeholder="Your working email"
+                                id="sign-in-popup-form-email" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-in-popup-form-password">Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="sign-in-popup-form-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-page__row">
+                        <div class="form-page__checkbox form-page__checkbox--flex45 checkbox">
+                            <input class="checkbox__input" id="popup-c_1" type="checkbox"
+                                name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+                            <label class="checkbox__label" for="popup-c_1"><span class="checkbox__text">Keep me signed
+                                    in</span></label>
+                        </div>
+                        <a class="form-page__link" href="#">Forgot password?</a>
+                    </div>
+
+                    <button class="button button--large button__colored _fw" type="submit">
+                        Sign in
+                    </button>
+                    <div class="popup__body__text">
+                        Don't have an account?
+                        <a class="form-page__link" href="#">
+                            Sign up
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-body__footer">
+                <div class="popup-body__footer-title">Or sign in with</div>
+                <ul class="popup-body__footer-socials socials-items">
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup" data-modal="sign-up" id="popup-sigin-up">
+    <div class="popup__container">
+        <div class="popup__body popup-body">
+            <button class="popup-body__close" type="button">
+                <svg>
+                    <use xlink:href="img/symbol/icons.svg#cross"></use>
+                </svg>
+            </button>
+            <div class="popup-body__header">
+                <h3 class="popup-body__header-title">Sign up</h3>
+                <p class="popup-body__header-subtitle">Registration takes less than a minute but gives you full control
+                    over your studying.</p>
+            </div>
+            <div class="popup-body__main">
+                <form class="popup-body__form form-page" action="#" data-form>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-name">Full Name*</label>
+                        <div class="form-page__input">
+                            <input type="text" name="form[name]" data-error="Ошибка" placeholder="Your full name"
+                                id="sign-up-popup-form-name" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-email">Email*</label>
+                        <div class="form-page__input">
+                            <input type="email" name="form[email]" data-error="Ошибка" placeholder="Your working email"
+                                id="sign-up-popup-form-email" data-req>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="sign-up-popup-form-password">Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="sign-up-popup-form-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-page__inner">
+                        <label class="form-page__label" for="popup-form-confirm-password">Confirm Password*</label>
+                        <div class="form-page__input">
+                            <input type="password" name="form[password]" data-error="Ошибка"
+                                id="popup-form-confirm-password" data-req>
+                            <button class="form-page__password-button" type="button">
+                                <svg>
+                                    <use xlink:href="img/symbol/icons.svg#union"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-page__row">
+                        <div class="form-page__checkbox form-page__checkbox--flex45 checkbox">
+                            <input class="checkbox__input" id="popup-c_2" type="checkbox"
+                                name="form[mailings-agreement]" data-error="Ошибка" value="1" checked>
+                            <label class="checkbox__label" for="popup-c_2"><span class="checkbox__text">Remember
+                                    me</span></label>
+                        </div>
+                    </div>
+
+                    <button class="form-page__button button button--large button__colored _fw" type="submit">
+                        Sign up
+                    </button>
+                    <div class="popup__body__text">
+                        Already have an account?
+                        <a class="form-page__link" href="#">
+                            Sign in
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-body__footer">
+                <div class="popup-body__footer-title"></div>
+                <ul class="popup-body__footer-socials socials-items">
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-items__item">
+                        <a class="socials-items__link" href="#">
+                            <svg>
+                                <use xlink:href="img/symbol/icons.svg#linkedIn"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

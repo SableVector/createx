@@ -1,0 +1,22 @@
+/* === FUNCTIONS === */
+
+// Функция преобразования px в rem
+$root-font-size: 16px;
+
+@function rem($size) {
+    @return calc($size / $root-font-size) * 1rem;
+}
+
+@function em($maxSize: 1, $minSize: 1) {
+    @return calc($maxSize / $minSize) * 1em;
+}
+
+html {
+    font-size: calc($root-font-size / 16px) * 100%;
+}
+
+// Функция подсчета процентов
+
+@function procent($min, $max) {
+    @return calc($min * 100% / $max);
+}

@@ -1,0 +1,76 @@
+/* === STAR RATING === */
+.rating {
+    @include transition(opacity);
+
+    display: flex;
+    align-items: flex-end;
+    font-size: $b * 15;
+    line-height: 0.75;
+
+    // .rating__body
+    &__body {
+        position: relative;
+        letter-spacing: em(8, 30);
+
+        &::before {
+            display: block;
+            content: "★★★★★";
+        }
+    }
+    // .rating__active
+    &__active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        overflow: hidden;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #ffd300;
+            content: "★★★★★";
+        }
+    }
+    // .rating__items
+    &__items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    // .rating__item
+    &__item {
+        flex: 0 0 20%;
+        height: 100%;
+        opacity: 0;
+    }
+    // .rating__value
+    &__value {
+        display: none;
+        font-size: 50%;
+        line-height: 1;
+    }
+    // .rating__info
+    &__info {
+        font-size: $b * 8;
+        color: #ababab;
+    }
+
+    &.rating_sending {
+        opacity: 0.2;
+    }
+
+    &.rating_set {
+        & .rating__active,
+        & .rating__item {
+            cursor: pointer;
+        }
+    }
+}

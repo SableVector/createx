@@ -1,0 +1,125 @@
+/* === LIST-EVENTS === */
+.list-events {
+    // .list-events__item-wrapper
+    &__item-wrapper {
+        @include animation2(zoomIn, 1s, 0.2s);
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 24, 15);
+
+            margin-bottom: $b * 12;
+        }
+    }
+
+    // .list-events__item
+    &__item {
+        @include transition(transform);
+        @include adaptiveValue("gap", 20, 10);
+        @include border-radius;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: $b * 20 $b * 16;
+        background-color: #fff;
+        box-shadow: $b * 6 $b * 5 $b * 7 0 rgba(0, 0, 0, 0.1);
+
+        @media (max-width: $md3+px) {
+            flex-direction: column;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+    // .list-events__info
+    &__info {
+        flex: 0 0 auto;
+    }
+    // .list-events__body
+    &__body {
+        flex: 1 1 auto;
+    }
+    // .list-events__button
+    &__button {
+        flex: 0 0 auto;
+
+        @media (max-width: $md4+px) {
+            // flex: 1 1 auto;
+            width: 100%;
+        }
+    }
+}
+
+.info-event {
+    display: flex;
+    gap: $b * 10;
+    align-items: flex-start;
+    // .info-event__num
+    &__num {
+        font-size: $b * 24;
+        font-weight: $fw-black;
+        line-height: 130%;
+        color: $color-primary;
+        letter-spacing: 1px;
+    }
+    // .info-event__date
+    &__date {
+    }
+    // .info-event__month
+    &__month {
+        @include adaptiveValue("font-size", 20, 18);
+
+        font-weight: $fw-bold;
+        line-height: 150%;
+        color: $color-main-dark;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+    // .info-event__time
+    &__time {
+        @include adaptiveValue("font-size", 16, 14);
+
+        color: $color-wolf;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+}
+
+.body-event {
+    // .body-event__title
+    &__title {
+        @include adaptiveValue("font-size", 20, 18);
+
+        display: block;
+        font-weight: $fw-bold;
+        line-height: 150%;
+        color: $color-main-dark;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+    // .body-event__subtitle
+    &__subtitle {
+        @include adaptiveValue("font-size", 16, 14);
+
+        color: $color-wolf;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+}

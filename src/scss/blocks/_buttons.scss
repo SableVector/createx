@@ -1,0 +1,38 @@
+/* === BUTTONS === */
+.button {
+    @include reset-btn;
+    @include transition(all);
+    @include hover-scale;
+    @include border-radius;
+
+    display: inline-block;
+    font-family: $font-family-main;
+    font-weight: $fw-bold;
+    letter-spacing: calc($b/4);
+
+    // .button__colored
+    &__colored {
+        color: #fff;
+        background: $color-btn-colored;
+    }
+    // .button__border
+    &__border {
+        color: $color-primary;
+        border: 1px solid $color-primary;
+    }
+
+    &._fw {
+        width: 100%;
+    }
+    // .button--large
+    &--large {
+        padding: 0.8125em 2.5em;
+        font-size: $b * 8;
+    }
+
+    // .button--regular
+    &--regular {
+        padding: 0.823em 2.29em;
+        font-size: $b * 7;
+    }
+}

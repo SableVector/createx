@@ -1,0 +1,99 @@
+/* === TEAM_CARD === */
+.team-card {
+    @include transition(all);
+    @include hover-scale;
+
+    text-align: center;
+    // .team-card__image
+    &__image {
+        @include border-radius;
+
+        position: relative;
+        padding: $b * 10 $b * 10 0;
+        overflow: hidden;
+        background-color: $color-bg-card;
+
+        @media (any-hover: hover) {
+            &:hover {
+                .team-card__socials {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        // &:not(:last-child) {
+        //     margin-bottom: $b * 8;
+        // }
+    }
+    // .team-card__image-ibg
+    &__image-ibg {
+        padding-bottom: procent(320, 245);
+    }
+    // .team-card__socials
+    &__socials {
+        @include transition(transform);
+
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 35%;
+        padding: $b * 10;
+        background: linear-gradient(360deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+
+        @media (min-width: $md3+px) {
+            transform: translateY(110%);
+        }
+    }
+    // .team-card__link
+    &__link {
+        display: inline-block;
+        padding: $b * 2.5;
+
+        svg {
+            width: $b * 8.5;
+            height: $b * 8.5;
+            fill: rgba(255, 255, 255, 0.5);
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                svg {
+                    fill: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+    // .team-card__body
+    &__body {
+        padding: $b * 8 $b * 2;
+    }
+    // .team-card__title
+    &__title {
+        display: inline-block;
+        font-size: $b * 10;
+        font-weight: $fw-bold;
+        line-height: 150%;
+
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+    // .team-card__descr
+    &__descr {
+        color: $color-wolf;
+
+        &:not(:last-child) {
+            margin-bottom: $b * 2;
+        }
+    }
+}

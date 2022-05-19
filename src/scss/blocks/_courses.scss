@@ -1,0 +1,121 @@
+/* === COURSES === */
+.courses-page {
+    // .courses-page__catalog
+    &__catalog {
+        @include adaptiveValue("padding-bottom", 180, 20);
+
+        padding-top: $b * 100;
+        overflow: hidden;
+
+        @media (max-width: $md3+px) {
+            padding-top: $b * 50;
+        }
+    }
+    // .courses-page__testimonials
+    &__testimonials {
+        @include adaptiveValue("padding-top", 80, 20);
+        @include adaptiveValue("padding-bottom", 100, 20);
+    }
+    // .courses-page__certificate
+    &__certificate {
+        @include adaptiveValue("padding-top", 120, 20);
+        @include adaptiveValue("padding-bottom", 120, 20);
+    }
+    // .courses-page__subscribe-form
+    &__subscribe-form {
+        @include adaptiveValue("padding-top", 120, 20);
+        @include adaptiveValue("padding-bottom", 180, 20);
+    }
+}
+
+.catalog-courses {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        pointer-events: none;
+        content: "";
+        background: url("../img/courses/tabs-courses/bg.jpg") center top/cover no-repeat;
+    }
+    // .catalog-courses__container
+    &__container {
+    }
+    // .catalog-courses__titles
+    &__titles {
+        @include title-center;
+        @include title-margin-bottom;
+    }
+    // .catalog-courses__tabs
+    &__tabs {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 80, 20);
+        }
+    }
+    // .catalog-courses__list
+    &__list {
+    }
+    // .catalog-courses__more-button
+    &__more-button {
+        @include transition(color);
+        @include reset-btn;
+
+        display: flex;
+        align-items: center;
+        padding: $b * 5;
+        margin: 0 auto;
+        font-family: inherit;
+        font-weight: $fw-bold;
+        line-height: inherit;
+        color: inherit;
+
+        svg {
+            @include transition(fill);
+
+            width: $b * 12;
+            height: $b * 12;
+            margin-right: $b * 8;
+            fill: $color-text;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $color-primary;
+
+                svg {
+                    fill: $color-primary;
+                    animation-name: rotate;
+                    animation-duration: 2000ms;
+                    animation-timing-function: ease-in-out;
+                    animation-iteration-count: infinite;
+                }
+            }
+        }
+    }
+}
+
+.list-courses {
+    // .list-courses__list
+    &__list {
+        @include adaptiveValue("gap", 30, 15);
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @media (min-width: $md3+px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: $md2+px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    // .list-courses__item
+    &__item {
+        @include animation1(zoomIn, 1s, 0s);
+    }
+}

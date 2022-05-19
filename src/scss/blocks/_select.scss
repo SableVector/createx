@@ -1,0 +1,41 @@
+.select {
+    &__value {
+        padding: 0 $b * 7.5;
+    }
+
+    &_control {
+        .select__title {
+            @include border-radius;
+
+            border: 1px solid rgba(4, 4, 4, 0.3);
+        }
+
+        .select__value {
+            height: $b * 20;
+            color: rgba(0, 0, 0, 0.5);
+
+            &::before {
+                // стили стрелочки.
+                margin-left: em(10, 8);
+            }
+        }
+
+        .select__option {
+            color: rgba(0, 0, 0, 0.5);
+
+            @media (any-hover: hover) {
+                &:hover {
+                    color: rgba(0, 0, 0, 1);
+                }
+            }
+        }
+    }
+}
+
+select {
+    @include border-radius;
+
+    height: $b * 20;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(4, 4, 4, 0.3);
+}

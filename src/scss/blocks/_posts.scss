@@ -1,0 +1,54 @@
+/* === POSTS === */
+.posts {
+    // .posts__container
+    &__container {
+    }
+    // .posts__top
+    &__top {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 60, 20);
+        }
+    }
+    // .posts__list
+    &__list {
+    }
+}
+
+.top-posts {
+    @media (min-width: $md3+px) {
+        display: flex;
+        gap: $b * 5;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    // .top-posts__titles
+    &__titles {
+        @media (max-width: $md3+px) {
+            &:not(:last-child) {
+                margin-bottom: em(46, 20);
+            }
+        }
+    }
+    // .top-posts__button
+    &__button {
+        @include animation1(fadeInRight, 1s, 0.4s);
+
+        @media (max-width: $md3+px) {
+            width: 100%;
+        }
+    }
+}
+
+.list-posts {
+    @include adaptiveValue("gap", 30, 10);
+
+    display: grid;
+
+    @media (min-width: $md3+px) {
+        grid-template-columns: repeat(auto-fit, minmax($b * 170, 1fr));
+    }
+    // .list-posts__item
+    &__item {
+        @include animation1(zoomIn, 1s, calc(var(--i) * 0.2s));
+    }
+}

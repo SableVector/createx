@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/blocks/_head.html', {
+"title": "CreateX"
+})
+
+<body>
+	<div class="wrapper" id="wrapper">
+        <!-- === HEADER === -->
+        @@include('html/blocks/_header.html',{
+        "activeClass_01": "menu__link",
+        "activeClass_02": "menu__link",
+        "activeClass_03": "menu__link",
+        "activeClass_04": "menu__link menu__link--active",
+        "activeClass_05": "menu__link",
+        })
+        <!-- === MAIN === -->
+        <main class="page__blog blog-page">
+
+            <section class="blog-page__our-blog our-blog">
+                <div class="our-blog__container">
+                    <div class="our-blog__titles block-header" data-animation>
+                        <div class="block-header__suptitle suptitle">Our blog</div>
+                        <h2 class="block-header__title title">Createx School Journal</h2>
+                    </div>
+
+                    <div class="our-blog__tabs tabs-our-blog" data-tabs>
+                        <div class="tabs-our-blog__inner" data-animation>
+                            <nav class="tabs-our-blog__navigation" data-tabs-titles>
+                                <button class="tabs-our-blog__title _tab-active" type="submit">All</button>
+                                <button class="tabs-our-blog__title" type="submit">
+                                    <svg>
+                                        <use xlink:href="img/symbol/icons.svg#files"></use>
+                                    </svg>
+                                    Articles
+                                </button>
+                                <button class="tabs-our-blog__title" type="submit">
+                                    <svg>
+                                        <use xlink:href="img/symbol/icons.svg#play"></use>
+                                    </svg>
+                                    Videos
+                                </button>
+                                <button class="tabs-our-blog__title" type="submit">
+                                    <svg>
+                                        <use xlink:href="img/symbol/icons.svg#mic"></use>
+                                    </svg>
+                                    Podcasts
+                                </button>
+                            </nav>
+                            <div class="tabs-our-blog__filter filter">
+                                <div class="filter__body">
+                                    <div class="filter__item filter-select">
+                                        <span class="filter-select__title">Blog category</span>
+                                        <div class="filter-select__body">
+                                            <select class="filter-select__select select" name="form[event-category]">
+                                                <option class="select__option" value="1" selected>all themes</option>
+                                                <option class="select__option" value="2">all themes №2</option>
+                                                <option class="select__option" value="3">all themes №3</option>
+                                                <option class="select__option" value="4">all themes №4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter__control filter-control">
+                                    <div class="filter-control__item filter-search">
+                                        <form class="filter-search__search search-form" action="#">
+                                            <div class="search-form__input">
+                                                <input autocomplete="off" type="text" name="form[search]"
+                                                    data-error="Ошибка" placeholder="Search course...">
+                                            </div>
+                                            <button class="search-form__button" type="submit">
+                                                <svg class="svg">
+                                                    <use xlink:href="img/symbol/icons.svg#search"></use>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-our-blog__content content-our-blog" data-tabs-body data-animation>
+                            <ul class="content-our-blog__list">
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_01.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#mic"></use>
+                                                </svg>
+                                                Podcast
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Marketing
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    September 4, 2020
+                                                </div>
+                                                <div class="post-card__content-info post-card__content-info--time">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#clock"></use>
+                                                    </svg>
+                                                    36 min
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">What is traffic arbitrage and does it really
+                                                    make money?</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                                                    Convallis
+                                                    proin
+                                                    dignissim lacus, purus gravida...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Listen
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_02.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#play"></use>
+                                                </svg>
+                                                Video
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Management
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    August 25, 2020
+                                                </div>
+                                                <div class="post-card__content-info post-card__content-info--time">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#clock"></use>
+                                                    </svg>
+                                                    45 min
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">What to do and who to talk to if you want to
+                                                    get feedback on the product</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Neque a, senectus consectetur odio in aliquet nec eu. Ultricies
+                                                    ac
+                                                    nibh
+                                                    urna urna
+                                                    sagittis faucibus...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Watch
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_03.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#files"></use>
+                                                </svg>
+                                                Article
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Design
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    August 8, 2020
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">Should you choose a creative profession if you
+                                                    are attracted to creativity?</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Curabitur nisl tincidunt eros venenatis vestibulum ac placerat.
+                                                    Tortor,
+                                                    viverra sed
+                                                    vulputate ultrices...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Read
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_04.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#files"></use>
+                                                </svg>
+                                                Article
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    HR & Recruting
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    August 3, 2020
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+                                                <a href="#">HR statistics: job search, interviews, hiring and
+                                                    recruiting</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo
+                                                    hac
+                                                    netus
+                                                    bibendum diam adipiscing aenean nisl. Molestie nullam ante
+                                                    mattis ac
+                                                    sit
+                                                    vitae pellentesque mi etiam. Morbi commodo tempor, massa
+                                                    vivamus. A
+                                                    molestie id semper fermentum pretium...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Read
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_05.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#files"></use>
+                                                </svg>
+                                                Article
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Development
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    September 1, 2020
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">How to choose the first programming language for a
+                                                    beginner</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Turpis sed at magna laoreet gravida consequat tortor placerat.
+                                                    Gravida
+                                                    vitae aliquet enim egestas dui...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Read
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_06.png" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#mic"></use>
+                                                </svg>
+                                                Podcast
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Design
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    July 28, 2020
+                                                </div>
+                                                <div class="post-card__content-info post-card__content-info--time">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#clock"></use>
+                                                    </svg>
+                                                    36 min
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+                                                <a href="#">What are color profiles and how they work in graphic
+                                                    design</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Aliquam vulputate hendrerit quam sollicitudin urna enim viverra
+                                                    gravida.
+                                                    Consectetur urna arcu eleifend...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Listen
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_07.png" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#play"></use>
+                                                </svg>
+                                                Video
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Management
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    July 15, 2020
+                                                </div>
+                                                <div class="post-card__content-info post-card__content-info--time">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#clock"></use>
+                                                    </svg>
+                                                    45 min
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">Startup: how to build a team that will live longer than
+                                                    a
+                                                    year</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at
+                                                    justo
+                                                    scelerisque in nisi, urna...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Watch
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_08.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#files"></use>
+                                                </svg>
+                                                Article
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Marketing
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    July 9, 2020
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">How to get customers to love your business from the
+                                                    start</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Malesuada in augue mi feugiat morbi a aliquet enim. Elementum
+                                                    lacus,
+                                                    pellentesque etiam arcu tristique ac...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Read
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                            </ul>
+                            <ul class="content-our-blog__list">
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_03.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#files"></use>
+                                                </svg>
+                                                Article
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Design
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    August 8, 2020
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">Should you choose a creative profession if you
+                                                    are attracted to creativity?</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Curabitur nisl tincidunt eros venenatis vestibulum ac placerat.
+                                                    Tortor,
+                                                    viverra sed
+                                                    vulputate ultrices...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Read
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_04.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#files"></use>
+                                                </svg>
+                                                Article
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    HR & Recruting
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    August 3, 2020
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+                                                <a href="#">HR statistics: job search, interviews, hiring and
+                                                    recruiting</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Massa, lectus nibh consectetur aliquet nunc risus aenean. Leo
+                                                    hac
+                                                    netus
+                                                    bibendum diam adipiscing aenean nisl. Molestie nullam ante
+                                                    mattis ac
+                                                    sit
+                                                    vitae pellentesque mi etiam. Morbi commodo tempor, massa
+                                                    vivamus. A
+                                                    molestie id semper fermentum pretium...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Read
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_05.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#files"></use>
+                                                </svg>
+                                                Article
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Development
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    September 1, 2020
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">How to choose the first programming language for a
+                                                    beginner</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Turpis sed at magna laoreet gravida consequat tortor placerat.
+                                                    Gravida
+                                                    vitae aliquet enim egestas dui...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Read
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_08.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#files"></use>
+                                                </svg>
+                                                Article
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Marketing
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    July 9, 2020
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">How to get customers to love your business from the
+                                                    start</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Malesuada in augue mi feugiat morbi a aliquet enim. Elementum
+                                                    lacus,
+                                                    pellentesque etiam arcu tristique ac...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Read
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                            </ul>
+                            <ul class="content-our-blog__list">
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_02.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#play"></use>
+                                                </svg>
+                                                Video
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Management
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    August 25, 2020
+                                                </div>
+                                                <div class="post-card__content-info post-card__content-info--time">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#clock"></use>
+                                                    </svg>
+                                                    45 min
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">What to do and who to talk to if you want to
+                                                    get feedback on the product</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Neque a, senectus consectetur odio in aliquet nec eu. Ultricies
+                                                    ac
+                                                    nibh
+                                                    urna urna
+                                                    sagittis faucibus...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Watch
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_07.png" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#play"></use>
+                                                </svg>
+                                                Video
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Management
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    July 15, 2020
+                                                </div>
+                                                <div class="post-card__content-info post-card__content-info--time">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#clock"></use>
+                                                    </svg>
+                                                    45 min
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">Startup: how to build a team that will live longer than
+                                                    a
+                                                    year</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Nisi, massa ut sit faucibus et diam. Faucibus at malesuada at
+                                                    justo
+                                                    scelerisque in nisi, urna...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Watch
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                            </ul>
+                            <ul class="content-our-blog__list">
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_01.jpg" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#mic"></use>
+                                                </svg>
+                                                Podcast
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Marketing
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    September 4, 2020
+                                                </div>
+                                                <div class="post-card__content-info post-card__content-info--time">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#clock"></use>
+                                                    </svg>
+                                                    36 min
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+
+                                                <a href="#">What is traffic arbitrage and does it really
+                                                    make money?</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Pharetra, ullamcorper iaculis viverra parturient sed id sed.
+                                                    Convallis
+                                                    proin
+                                                    dignissim lacus, purus gravida...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Listen
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                                <li class="content-our-blog__item">
+
+                                    <article class="post-card">
+                                        <div class="post-card__image">
+                                            <a class="post-card__image-ibg" href="#">
+                                                <img src="@img/blog-post/image_06.png" alt="illustration">
+                                            </a>
+                                            <div class="post-card__image-badge">
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#mic"></use>
+                                                </svg>
+                                                Podcast
+                                            </div>
+                                        </div>
+
+                                        <div class="post-card__content">
+                                            <div class="post-card__content-header">
+                                                <div class="post-card__content-info">
+                                                    Design
+                                                </div>
+                                                <div class="post-card__content-info">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#calendar"></use>
+                                                    </svg>
+                                                    July 28, 2020
+                                                </div>
+                                                <div class="post-card__content-info post-card__content-info--time">
+                                                    <svg>
+                                                        <use xlink:href="img/symbol/icons.svg#clock"></use>
+                                                    </svg>
+                                                    36 min
+                                                </div>
+                                            </div>
+                                            <h3 class="post-card__content-title">
+                                                <a href="#">What are color profiles and how they work in graphic
+                                                    design</a>
+                                            </h3>
+                                            <div class="post-card__content-text">
+                                                <p>
+                                                    Aliquam vulputate hendrerit quam sollicitudin urna enim viverra
+                                                    gravida.
+                                                    Consectetur urna arcu eleifend...
+                                                </p>
+                                            </div>
+                                            <a class="post-card__link link-arrow" href="#">
+                                                Listen
+                                                <svg>
+                                                    <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                    </article>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="our-blog__pagination pagination" data-animation>
+                        <ul class="pagination__list">
+                            <li class="pagination__item">
+                                <button class="pagination__button pagination__button--active">1</button>
+                            </li>
+                            <li class="pagination__item">
+                                <button class="pagination__button" type="button">2</button>
+                            </li>
+                            <li class="pagination__item">
+                                <button class="pagination__button" type="button">3</button>
+                            </li>
+                            <li class="pagination__item">
+                                <button class="pagination__button" type="button">4</button>
+                            </li>
+                            <li class="pagination__item">
+                                <button class="pagination__button" type="button">
+                                    <svg>
+                                        <use xlink:href="img/symbol/icons.svg#slider-arrow"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            @@include('html/blocks/_form-mailing-grey.html',{
+                "section-class" : "mailings-grey"
+            })
+
+        </main>
+        <!-- === FOOTER === -->
+        @@include('html/blocks/_footer.html',{})
+    </div>
+
+    <!-- === POPUP === -->
+    @@include('html/blocks/_popup.html',{})
+</body>
+
+</html>
